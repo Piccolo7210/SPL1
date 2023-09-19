@@ -1,0 +1,1363 @@
+***********************TCP Packet 1 *************************
+
+IP Header
+     Source IP         : 23.58.14.7
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 465
+     TTL               : 52
+     Checksum          : 24226
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 45148
+     Sequence Number      : 3771152675
+     Acknowledge Number   : 4211279176
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 501
+     Checksum             : 39856
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 34 01 D1 40 00 = 34 06 5E A2 17 3A 0E 07
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB B0 5C E0 C7 39 23 = FB 03 05 48 80 10 01 F5
+000010  9B B0 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 2 *************************
+
+IP Header
+     Source IP         : 23.58.14.7
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 83  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 466
+     TTL               : 52
+     Checksum          : 24194
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 45148
+     Sequence Number      : 3771152675
+     Acknowledge Number   : 4211279177
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 501
+     Checksum             : 46804
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Alert
+     Version: TLS 1.3
+     Length: 6671
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 53 01 D2 40 00 = 34 06 5E 82 17 3A 0E 07
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB B0 5C E0 C7 39 23 = FB 03 05 49 80 18 01 F5
+000010  B6 D4 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  15 03 03 00 1A 0F 2B 90 = 01 0C B6 FA D5 49 B0 7D
+000010  D8 F4 D6 AF D8 41 07 7D = 10 09 48 38 0C 9E 55
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 3 *************************
+
+IP Header
+     Source IP         : 23.58.14.7
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 467
+     TTL               : 52
+     Checksum          : 24224
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 45148
+     Sequence Number      : 3771152706
+     Acknowledge Number   : 4211279177
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 1
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 501
+     Checksum             : 39820
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 34 01 D3 40 00 = 34 06 5E A0 17 3A 0E 07
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB B0 5C E0 C7 39 42 = FB 03 05 49 80 14 01 F5
+000010  9B 8C 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 4 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 60  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 0
+     TTL               : 121
+     Checksum          : 60516
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141370725
+     Acknowledge Number   : 1240306988
+     Header Length        : 40 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 1
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 65535
+     Checksum             : 4768
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 3C 00 00 40 00 = 79 06 EC 64 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 4D 65 = 49 ED 95 2C A0 12 FF FF
+000010  12 A0 00 00 02 04 05 84 = 04 02 08 0A 02 A4 28 0A
+000020  A3 DB 70 72 01 03 03 08
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 5 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7029
+     TTL               : 121
+     Checksum          : 4344
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141370726
+     Acknowledge Number   : 1240307652
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 262
+     Checksum             : 15670
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 34 1B 75 00 00 = 79 06 10 F8 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 97 C4 80 10 01 06
+000010  3D 36 00 00 01 01 08 0A = 02 A4 28 3F A3 DB 70 A6
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 6 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7030
+     TTL               : 121
+     Checksum          : 4343
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141370726
+     Acknowledge Number   : 1240307828
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 15487
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 34 1B 76 00 00 = 79 06 10 F7 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 98 74 80 10 01 0B
+000010  3C 7F 00 00 01 01 08 0A = 02 A4 28 40 A3 DB 70 A7
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 7 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 820  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7031
+     TTL               : 121
+     Checksum          : 3574
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141370726
+     Acknowledge Number   : 1240307828
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 15907
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Handshake
+     Version: TLS 1.3
+     Length: 32770
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 03 34 1B 77 00 00 = 79 06 0D F6 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 98 74 80 18 01 0B
+000010  3E 23 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  16 03 03 00 80 02 00 00 = 7C 03 03 C3 C3 2A 7B 73
+000010  30 E6 92 1C A0 44 4B C4 = 06 37 70 2E A8 E2 B5 C0
+000020  B4 A6 5B EB DD EF 3E BF = A7 98 36 20 C1 22 93 16
+000030  16 76 C9 30 B7 10 66 46 = FD FF C0 6D 83 D2 D3 C6
+000040  35 9E 31 1F 67 EE 4A 0E = B5 50 78 6D 13 01 00 00
+000050  34 00 29 00 02 00 00 00 = 33 00 24 00 1D 00 20 D1
+000060  D1 EC 94 A4 8C 03 27 C2 = 83 99 AA 6B 0F EC 62 0C
+000070  A6 F4 82 9A B4 E9 7D B5 = C3 EA 2C EF 27 C1 77 00
+000080  2B 00 02 03 04 14 03 03 = 00 01 01 17 03 03 00 48
+000090  4E 1D 85 A8 0A A8 A1 72 = AD 3C 90 09 CA 75 16 45
+0000A0  D3 16 63 11 3E 01 37 CF = 45 C2 5D 71 AA 9E CA 24
+0000B0  02 37 D0 F5 99 BD 6E 9F = 2D DE 28 B1 46 B9 95 14
+0000C0  F2 2F 94 24 7E F6 6C 18 = B9 AA 6F 6B D0 A1 38 F4
+0000D0  1D A3 05 09 E6 BA BC 6B = 17 03 03 02 23 6D F3 A5
+0000E0  8C 80 B5 52 54 02 0C E4 = 82 7E E1 94 10 B5 20 D3
+0000F0  E2 AA 10 CB 57 93 82 4C = 55 07 B0 F1 00 72 23 9F
+000100  C9 FD 4A 39 D3 28 A3 70 = 26 C2 8D F2 2E 35 FE F9
+000110  FF A2 6E D0 6D EC 07 D6 = 7B 97 98 9F E8 A5 E5 13
+000120  BD 8B 22 E8 2E 85 5C 3A = FD BA 89 60 ED 71 E1 BB
+000130  29 65 1A 03 5E 2F AB 73 = 33 65 5A 87 D8 A9 50 9A
+000140  34 0B 9C F8 A4 F3 5E 38 = 6D 72 08 E4 50 89 88 B3
+000150  D7 87 43 7B B5 49 3E 57 = 82 5A BF FC 07 26 F6 22
+000160  9E 7A 12 58 B7 48 FF F2 = DB 68 36 48 37 3E E2 2E
+000170  BD 6C 61 9C 17 F7 DB D7 = 51 D2 90 CF C4 C4 04 0E
+000180  30 09 0A 6E 5F 1F B8 E5 = 77 ED 96 1A 0A 5A 34 92
+000190  33 37 2A 1C 1B 05 38 CD = 62 FD D4 8B C1 3E AD 2E
+0001A0  9A D7 D2 B9 63 50 09 D7 = 93 9B 44 BC C3 26 FD BB
+0001B0  F8 D8 06 88 54 69 F7 FF = 39 14 9A E8 FC A1 C7 11
+0001C0  1B DA E2 A5 D1 8A D9 DD = D8 A9 D6 F3 3E 46 1B E2
+0001D0  97 CB 70 FA 7A 14 6E C1 = 7E 21 30 F7 C9 CB 5C 13
+0001E0  BA 4B 22 88 A3 CA 40 3F = 38 1A EB B1 0B 70 D0 6F
+0001F0  CC E6 8B CA BE 8A 88 1D = 9A 3A 38 16 CE CC 42 1D
+000200  83 9F 76 5D 86 A8 CE 25 = D3 38 EC FA BD D5 27 F6
+000210  EB D1 ED A6 2A C8 45 68 = 16 3E 7D 68 C5 92 BA 1A
+000220  E6 ED DC D1 56 D3 1E D6 = 5B 6A A5 BB D8 8C F4 9E
+000230  74 F4 00 78 9D 71 18 BF = 60 8D CF CD C9 2D FC 02
+000240  ED 09 53 00 57 F4 1E AC = DD C0 93 6A 7E A7 47 67
+000250  3A AC A8 B7 F4 45 B2 14 = CE 9C CF 15 2D 44 0D 6C
+000260  02 DD 46 C1 73 A9 51 98 = 74 74 38 F2 52 5C 94 8E
+000270  65 41 CC 43 A5 DE 54 38 = AA 16 91 CA A5 14 5A 03
+000280  78 61 5C 75 4C 02 7B 42 = BB 5E 7F 97 18 EF 5E 2A
+000290  86 CE 12 C9 18 50 F7 A8 = 38 B8 4B C1 7F 32 01 33
+0002A0  3F AD 96 45 ED 7B BF 21 = 70 60 2F 62 31 D1 B1 92
+0002B0  9F 40 F5 46 FC B3 94 5E = 7F 80 CF CB 4F C8 1F 64
+0002C0  A2 C4 8C 3D 70 0F 7D 09 = A8 E9 F9 D0 20 B2 D0 F2
+0002D0  1F 1E 2B 0F F1 22 67 EB = 85 6B 07 5E 2A 7D 36 4E
+0002E0  6C ED 71 26 98 65 DC FD = D6 12 04 EC 3C 72 C2 0A
+0002F0  4C A1 E6 61 A4 D3 CA 25 = A2 B8 BB 8C A5 DB B0 5A
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 8 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 114  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7032
+     TTL               : 121
+     Checksum          : 4279
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141371494
+     Acknowledge Number   : 1240307828
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 6457
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 14754
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 72 1B 78 00 00 = 79 06 10 B7 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 50 66 = 49 ED 98 74 80 18 01 0B
+000010  19 39 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 39 A2 EF 96 = 48 A5 FD FD FE F5 74 8E
+000010  6B D5 14 7D 9A FB A3 B4 = 9E 8D A4 DB 7F 2D B3 DC
+000020  6A 7C 1F 30 84 C3 A3 AC = A6 2A 85 B7 6A 46 4C 08
+000030  BE EB BF 0F 4D B5 C8 51 = 82 04 C5 73 7D 16
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 9 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 83  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7033
+     TTL               : 121
+     Checksum          : 4309
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141371556
+     Acknowledge Number   : 1240307828
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 27691
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 6709
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 53 1B 79 00 00 = 79 06 10 D5 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 50 A4 = 49 ED 98 74 80 18 01 0B
+000010  6C 2B 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 1A 35 C3 48 = C6 27 E3 C1 EB 8E 7F E6
+000010  51 2C D1 5A 55 AB F1 A3 = 24 B1 AC 9B 32 A4 52
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 10 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7034
+     TTL               : 121
+     Checksum          : 4339
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141371587
+     Acknowledge Number   : 1240307912
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 14293
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 34 1B 7A 00 00 = 79 06 10 F3 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 50 C3 = 49 ED 98 C8 80 10 01 0B
+000010  37 D5 00 00 01 01 08 0A = 02 A4 28 BC A3 DB 71 24
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 11 *************************
+
+IP Header
+     Source IP         : 172.217.166.237
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 128
+     Identification    : 7035
+     TTL               : 121
+     Checksum          : 4338
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 48280
+     Sequence Number      : 4141371587
+     Acknowledge Number   : 1240307943
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 14260
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 80 00 34 1B 7B 00 00 = 79 06 10 F2 AC D9 A6 ED
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB BC 98 F6 D8 50 C3 = 49 ED 98 E7 80 10 01 0B
+000010  37 B4 00 00 01 01 08 0A = 02 A4 28 BD A3 DB 71 25
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 12 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 60  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 0
+     TTL               : 121
+     Checksum          : 12263
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599541960
+     Acknowledge Number   : 1987477189
+     Header Length        : 40 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 1
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 65535
+     Checksum             : 50186
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 3C 00 00 40 00 = 79 06 2F E7 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 12 C8 = 76 76 7E C5 A0 12 FF FF
+000010  C4 0A 00 00 02 04 05 84 = 04 02 08 0A 43 60 24 DC
+000020  44 CF FB 1C 01 03 03 08
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 13 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57036
+     TTL               : 121
+     Checksum          : 37154
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599541961
+     Acknowledge Number   : 1987477852
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 262
+     Checksum             : 61126
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE CC 00 00 = 79 06 91 22 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 12 C9 = 76 76 81 5C 80 10 01 06
+000010  EE C6 00 00 01 01 08 0A = 43 60 24 FE 44 CF FB 3E
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 14 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 264  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57037
+     TTL               : 121
+     Checksum          : 36941
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599541961
+     Acknowledge Number   : 1987477852
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 262
+     Checksum             : 44928
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Handshake
+     Version: TLS 1.3
+     Length: 32770
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 01 08 DE CD 00 00 = 79 06 90 4D 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 12 C9 = 76 76 81 5C 80 18 01 06
+000010  AF 80 00 00 01 01 08 0A = 43 60 25 42 44 CF FB 3E
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  16 03 03 00 80 02 00 00 = 7C 03 03 28 E6 45 33 85
+000010  83 FE 60 43 B0 8A A0 F6 = E7 AB DE F1 48 28 D3 81
+000020  A0 AC E4 64 A4 C5 AA 7E = 29 24 38 20 ED 66 52 BD
+000030  EE 1C FF E1 CE 85 98 88 = CE CE CE BC E8 A0 D7 AC
+000040  B4 94 42 27 00 45 39 26 = 81 1E B3 85 13 01 00 00
+000050  34 00 29 00 02 00 00 00 = 33 00 24 00 1D 00 20 51
+000060  33 45 2B 60 B3 8F A8 9A = 28 E6 DA C0 A0 3E 92 CA
+000070  B0 7C 18 EA 6A 27 A8 90 = B7 19 06 92 28 C0 39 00
+000080  2B 00 02 03 04 14 03 03 = 00 01 01 17 03 03 00 44
+000090  BC DA EA 6B CD F6 C3 DA = 79 F7 3A 26 7A D5 02 80
+0000A0  AC 19 03 4B B5 FE 76 DE = 91 71 3A 8F 65 26 1A 36
+0000B0  52 9E 8B 23 78 08 A9 C6 = 57 7D D8 70 AD E5 8D B9
+0000C0  1C 68 C1 93 F4 83 F2 E4 = 00 D6 45 D4 B9 5D 23 C8
+0000D0  59 AF FA A9
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 15 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57038
+     TTL               : 121
+     Checksum          : 37152
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542173
+     Acknowledge Number   : 1987477916
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 262
+     Checksum             : 60649
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE CE 00 00 = 79 06 91 20 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 13 9D = 76 76 81 9C 80 10 01 06
+000010  EC E9 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 16 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57039
+     TTL               : 121
+     Checksum          : 37151
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542173
+     Acknowledge Number   : 1987478086
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 60474
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE CF 00 00 = 79 06 91 1F 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 13 9D = 76 76 82 46 80 10 01 0B
+000010  EC 3A 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 17 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 638  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57040
+     TTL               : 121
+     Checksum          : 36564
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542173
+     Acknowledge Number   : 1987478086
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 28859
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 1865
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 02 7E DE D0 00 00 = 79 06 8E D4 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 13 9D = 76 76 82 46 80 18 01 0B
+000010  70 BB 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 02 07 49 1B 52 = 3C F4 CC AD E5 C4 51 F8
+000010  D5 7D D8 9F 1E F4 50 69 = CB 43 B8 B0 22 96 B4 B3
+000020  FC 38 54 91 3A 0E 3F 9A = 06 63 54 C3 54 DC D5 77
+000030  48 A3 3C 78 14 47 32 BE = 9C B2 27 2B AA 13 DA CE
+000040  F8 11 2A A5 B0 20 05 69 = 1C 9C A6 A9 86 FD E6 C2
+000050  C2 7E A2 4B 80 13 5D 28 = DB FC 22 26 56 23 82 28
+000060  32 B1 19 E1 0E F5 78 4F = 45 72 2D 6F 6E E4 73 CD
+000070  C4 E3 4A 0B 15 E2 FF 73 = 50 82 41 30 3D 72 AD 52
+000080  A4 03 AD D8 02 FD 02 47 = 46 AE 98 B8 E6 8B 96 16
+000090  A4 00 D9 FF E4 B3 32 2C = 86 0F E5 EA 75 1D D0 85
+0000A0  45 EE 60 6F C1 1C 65 61 = A4 0C 44 9B DD 97 81 95
+0000B0  7A 46 29 0E 57 59 DF DC = A7 24 AA FC B9 BD 29 FB
+0000C0  7C B6 39 0D 79 F8 5E 2D = B1 35 AB 86 C7 CF 79 02
+0000D0  D1 E4 12 52 0F 0F 4C 94 = EF 18 3A 81 08 95 91 38
+0000E0  F4 3C F1 B8 C0 AA 15 B6 = 04 C9 47 82 CE 53 66 EF
+0000F0  A6 FB 40 D1 5B 18 8D AC = 24 8B 09 D8 49 B4 27 58
+000100  47 48 4D 2D 90 15 D8 2A = 1C B4 C0 37 6E B5 E1 CD
+000110  0F 2D 1A A6 34 75 A3 B0 = 1E 20 66 E0 5F 41 9A 3F
+000120  64 85 72 E8 89 27 53 FF = FF 57 D3 2B 56 E0 39 2C
+000130  CF 46 F5 DB FF 48 6D E8 = 5B E8 6E 6B CE 5A 1A 60
+000140  65 2D 10 3F FB 77 92 7F = 79 11 F6 58 AE C2 0F EE
+000150  95 DC 72 49 19 87 83 A8 = 9C E7 C6 0C 52 CE 52 33
+000160  86 8D A3 FA 9A A3 69 CC = 14 A4 A7 82 C2 2C 1F CD
+000170  C2 82 7A 2C EA E5 C1 ED = A3 82 B0 8A 25 A0 9F 00
+000180  55 38 1D 73 AB 16 EF 7D = 09 05 78 6B 7B D1 59 C6
+000190  C4 CF 67 6A B9 3D 62 50 = BC 14 57 58 CE C8 68 FB
+0001A0  60 0E 5D CA B1 EF E1 A3 = D8 5D 7B B3 0F 8C F4 02
+0001B0  62 28 DA 0A 59 20 7D 33 = 6F 56 AE 5A FF 9A 48 2C
+0001C0  11 BF 94 5F 22 79 07 25 = 9C ED 25 6D 19 32 8E 40
+0001D0  F9 CA 56 EE 5F 0E AD 91 = 82 5B 9D 2F 25 1A DE F9
+0001E0  AB 2D 5F C2 C2 08 6F A8 = 53 26 36 89 3D 15 A8 3E
+0001F0  96 87 2A 68 46 C5 95 F1 = 23 D3 AA 5D 0F F1 50 24
+000200  DD 59 1A 66 EB 64 DD BC = D5 6A 37 A1 17 03 03 00
+000210  39 92 2B 27 0B AB B3 CB = 09 46 97 6B D2 5B EE 88
+000220  9C F3 74 9F 51 57 D1 82 = C5 B6 BC 70 06 52 02 23
+000230  25 3D CA BA BF 62 C1 18 = 0B 15 A8 AC BA 0E E8 93
+000240  DD 27 1D A1 CF 52 50 58 = 88 B8
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 18 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 83  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57041
+     TTL               : 121
+     Checksum          : 37118
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542759
+     Acknowledge Number   : 1987478086
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 267
+     Checksum             : 26409
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 6867
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 53 DE D1 00 00 = 79 06 90 FE 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 15 E7 = 76 76 82 46 80 18 01 0B
+000010  67 29 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 1A D3 8B D1 = 2B 46 8E F3 B0 9C 7E 80
+000010  03 0D A1 53 8C FC 4E 7C = 6B 10 64 BB 28 FC 60
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 19 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57042
+     TTL               : 121
+     Checksum          : 37148
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542790
+     Acknowledge Number   : 1987478273
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 272
+     Checksum             : 59659
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE D2 00 00 = 79 06 91 1C 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 16 06 = 76 76 83 01 80 10 01 10
+000010  E9 0B 00 00 01 01 08 0A = 43 60 25 68 44 CF FB A3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 20 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57043
+     TTL               : 121
+     Checksum          : 37147
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542790
+     Acknowledge Number   : 1987478304
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 272
+     Checksum             : 59570
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE D3 00 00 = 79 06 91 1B 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 16 06 = 76 76 83 20 80 10 01 10
+000010  E8 B2 00 00 01 01 08 0A = 43 60 25 82 44 CF FB C3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 21 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 250  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57044
+     TTL               : 121
+     Checksum          : 36948
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542790
+     Acknowledge Number   : 1987478304
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 272
+     Checksum             : 20195
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 49425
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 FA DE D4 00 00 = 79 06 90 54 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 16 06 = 76 76 83 20 80 18 01 10
+000010  4E E3 00 00 01 01 08 0A = 43 60 26 4F 44 CF FB C3
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 C1 11 19 BF = 44 0C 3C 6A 1D 0B 2B 68
+000010  55 CD ED 55 08 95 F2 4E = F8 5F 0D 33 D6 24 07 87
+000020  2A EE E9 BE E2 5A 62 CC = 79 9E 46 D5 0D 8C 1B A0
+000030  6F D2 40 55 E2 BB 06 DA = 15 4D 95 EB 8F 50 35 DB
+000040  A5 BD 0A F1 3C 36 67 82 = 85 0C 87 43 5C F5 26 2F
+000050  5C 5C F0 D5 4B DA BD 91 = 05 5D 72 91 5E 3D B1 EE
+000060  E1 64 07 45 14 BC 8D 9E = 27 09 F5 85 B3 7A DB 4C
+000070  0D 8E 19 EC 92 31 0F 98 = 54 E5 84 48 31 F6 82 32
+000080  E8 14 A1 66 1C 93 23 83 = 66 26 47 D9 FD 73 A4 16
+000090  D8 5C D8 F0 D0 86 90 74 = 88 67 53 F0 F6 B3 64 55
+0000A0  01 5C E8 FC 04 3F 3A F6 = 42 6A 34 78 D5 9C 4F 8E
+0000B0  35 7E B2 72 53 91 33 1A = FC F0 15 05 33 0C C8 9F
+0000C0  8A EB 64 48 88 3B
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 22 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 96
+     Identification    : 57045
+     TTL               : 121
+     Checksum          : 37145
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 41312
+     Sequence Number      : 1599542988
+     Acknowledge Number   : 1987478343
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 272
+     Checksum             : 58859
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 60 00 34 DE D5 00 00 = 79 06 91 19 22 75 ED EF
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB A1 60 5F 57 16 CC = 76 76 83 47 80 10 01 10
+000010  E5 EB 00 00 01 01 08 0A = 43 60 26 6F 44 CF FC B0
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 23 *************************
+
+IP Header
+     Source IP         : 45.133.44.4
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 52410
+     TTL               : 53
+     Checksum          : 24176
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 33450
+     Sequence Number      : 3671864611
+     Acknowledge Number   : 112420885
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 11
+     Checksum             : 40824
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 34 CC BA 40 00 = 35 06 5E 70 2D 85 2C 04
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB 82 AA DA DC 35 23 = 06 B3 68 15 80 10 00 0B
+000010  9F 78 00 00 01 01 08 0A = 40 D7 13 C5 EF 86 75 4F
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 24 *************************
+
+IP Header
+     Source IP         : 45.133.44.4
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 91  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 52411
+     TTL               : 53
+     Checksum          : 24136
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 33450
+     Sequence Number      : 3671864611
+     Acknowledge Number   : 112420885
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 11
+     Checksum             : 4352
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 8896
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 5B CC BB 40 00 = 35 06 5E 48 2D 85 2C 04
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB 82 AA DA DC 35 23 = 06 B3 68 15 80 18 00 0B
+000010  11 00 00 00 01 01 08 0A = 40 D7 13 C5 EF 86 75 4F
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 22 C0 86 68 = 97 3E 67 7B 2E 6A 63 39
+000010  86 19 7A 08 49 00 4A 56 = 9E 89 2D 11 D2 A4 31 FD
+000020  9C 17 D2 6B E4 86 84
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 25 *************************
+
+IP Header
+     Source IP         : 45.133.44.4
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 91  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 52412
+     TTL               : 53
+     Checksum          : 24135
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 33450
+     Sequence Number      : 3671864650
+     Acknowledge Number   : 112420885
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 11
+     Checksum             : 21930
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 8938
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 5B CC BC 40 00 = 35 06 5E 47 2D 85 2C 04
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB 82 AA DA DC 35 4A = 06 B3 68 15 80 18 00 0B
+000010  55 AA 00 00 01 01 08 0A = 40 D7 14 9B EF 86 75 93
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 22 EA BA 96 = DC 2D 20 95 E1 24 8B 5C
+000010  BB C5 90 51 2B E5 43 FD = 4F F8 A8 83 C4 13 66 57
+000020  C1 AB 21 C8 8A 40 9B
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 26 *************************
+
+IP Header
+     Source IP         : 45.133.44.4
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 76  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 52413
+     TTL               : 53
+     Checksum          : 24149
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 33450
+     Sequence Number      : 3671864689
+     Acknowledge Number   : 112420885
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 11
+     Checksum             : 52929
+     Urgent Pointer       : 0
+
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 4987
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 4C CC BD 40 00 = 35 06 5E 55 2D 85 2C 04
+000010  C0 A8 00 68
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB 82 AA DA DC 35 71 = 06 B3 68 15 80 18 00 0B
+000010  CE C1 00 00 01 01 08 0A = 40 D7 14 9B EF 86 75 93
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 13 7B B2 EF = BC 9C 7A 2A DD CB 0A 2E
+000010  73 2B 45 D5 DA D6 3C 28
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 27 *************************
+
+IP Header
+     Source IP         : 45.133.44.4
+     Destination IP    : 192.168.0.104
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 52414
+     TTL               : 53
+     Checksum          : 24172
+
+TCP Header
+     Source Port          : 443
+     Destination P

@@ -28,4 +28,10 @@ struct udphdr
     u_int16_t len;
     u_int16_t check;
 };
+struct sslhdr{
+	u_char type;
+	u_char ver1;
+	u_char ver2;
+	u_int16_t length;
+};
 #endif
