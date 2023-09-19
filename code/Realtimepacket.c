@@ -32,7 +32,7 @@ int main(){
 		printf("Error on creating FILE.\n");
 		return -5;
 	}
-	rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_UDP);
+	rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
 	if(rawSocket<0){
 		printf("Socket creating ERROR.\n");
 		return -2;// -2 defining as socket error
