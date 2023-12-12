@@ -1,7 +1,7 @@
 #ifndef HEADERS_INCLUDED
 #define HEADERS_INCLUDED
 #include <linux/types.h>
-struct GlobalHeader
+struct globalhdr
 {
     u_int32_t magicNumber;
     u_int16_t versionMajor;
@@ -11,7 +11,7 @@ struct GlobalHeader
     u_int32_t snaplen;
     u_int32_t network;
 };
-struct PacketHeader
+struct packethdr
 {
     u_int32_t tSec;
     u_int32_t tuSec;
@@ -19,7 +19,7 @@ struct PacketHeader
     u_int32_t packLen;
 };
 
-struct EthernetHeader
+struct ethernethdr
 {
     u_char destination[6];
     u_char source[6];
@@ -59,7 +59,7 @@ struct sslhdr{
 	u_char ver2;
 	u_int16_t length;
 };
-struct flood
+struct Synfld
 {
     u_int32_t IP[4];
     u_int64_t syn;

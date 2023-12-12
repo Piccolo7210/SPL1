@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<unistd.h>
 #include<string.h>
 #include<stdlib.h>
 #include<ctype.h>
@@ -26,7 +27,7 @@ int main(int argc,char *arg[]){
 		}
 	}
 	else if(argc==3){
-		if(arg[1][0]=='-' && arg[1][1]=='S')SynFlood();
+		if(arg[1][0]=='-' && arg[1][1]=='S')SynFlood(arg[2]);
 		printf("\n\n\n\n");
 		sleep(1);
 		commandLine(arg);
@@ -161,7 +162,6 @@ void commandLine(char *pcapfile[100]){
 	packetlen=0;
 	}
 	fclose(fp);
-	if(!strcmp(pcapfile[1],"-S"))SynFlood();
 }
 
 
