@@ -1,0 +1,274 @@
+Magic number: a1b2c3d4
+Version: 2.4
+Time: 0
+Sigfig: 0
+snaplen: 40000
+network: 1
+
+
+pack#1
+
+: Length of packet: 105
+--------Ethernet Header-------
+Destination Address:98:da:c4:7b:7d:10
+Source Address:00:15:5d:00:67:08
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 91
+Identification Number : 0xd274
+Time to live : 64
+Protocol : 6
+Checksum : 0x406
+source IP:192.168.0.106
+destination IP:34.160.128.112
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 38428
+DESTINATION PORT : 443
+This is a SSL packet
+SEQUENCE NUMBER : 3088410261
+ACKNOWLEDGEMENT NUMBER: 504967620
+Header Length: 32
+URG : 0
+ACK: 1
+PSH : 1
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 501
+Checksum : 0x6470
+Urgent Pointer : 0
+
+-------SSL Packet-------
+Record Type : Application Data
+Version : TLS 1.3
+Length : 8704
+
+17 03 03 00 22 00 52 ce 3d 04 27 55 ce 78 3d 1c                         ....".R.=.'U.x=.
+3f 8d 0d fa e7 8a 14 99 dc 38 98 75 6e 3b 84 59                         ?........8.un;.Y
+b1 26 f5 f9 ce 02 c3                                                    .&.....
+
+
+
+pack#2
+
+: Length of packet: 66
+--------Ethernet Header-------
+Destination Address:00:15:5d:00:67:08
+Source Address:98:da:c4:7b:7d:10
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 52
+Identification Number : 0x3cdf
+Time to live : 56
+Protocol : 6
+Checksum : 0xe1c2
+source IP:34.160.128.112
+destination IP:192.168.0.106
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 443
+DESTINATION PORT : 38428
+This is a SSL packet
+SEQUENCE NUMBER : 504967620
+ACKNOWLEDGEMENT NUMBER: 3088410300
+Header Length: 32
+URG : 0
+ACK: 1
+PSH : 0
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 277
+Checksum : 0x2596
+Urgent Pointer : 0
+
+
+
+pack#3
+
+: Length of packet: 105
+--------Ethernet Header-------
+Destination Address:00:15:5d:00:67:08
+Source Address:98:da:c4:7b:7d:10
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 91
+Identification Number : 0x3ce0
+Time to live : 56
+Protocol : 6
+Checksum : 0xe19a
+source IP:34.160.128.112
+destination IP:192.168.0.106
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 443
+DESTINATION PORT : 38428
+This is a SSL packet
+SEQUENCE NUMBER : 504967620
+ACKNOWLEDGEMENT NUMBER: 3088410300
+Header Length: 32
+URG : 0
+ACK: 1
+PSH : 1
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 277
+Checksum : 0x2b2f
+Urgent Pointer : 0
+
+-------SSL Packet-------
+Record Type : Application Data
+Version : TLS 1.3
+Length : 8906
+
+17 03 03 00 22 ca 6c 0d 29 10 61 b2 a4 ea ad b7                         ....".l.).a.....
+4c 7f 11 d5 da 9f 1f ad 8d 70 dd aa 82 2c 76 ce                         L........p...,v.
+3a 09 5b cd 3a 69 e7                                                    :.[.:i.
+
+
+
+pack#4
+
+: Length of packet: 66
+--------Ethernet Header-------
+Destination Address:98:da:c4:7b:7d:10
+Source Address:00:15:5d:00:67:08
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 52
+Identification Number : 0xd275
+Time to live : 64
+Protocol : 6
+Checksum : 0x42c
+source IP:192.168.0.106
+destination IP:34.160.128.112
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 38428
+DESTINATION PORT : 443
+This is a SSL packet
+SEQUENCE NUMBER : 3088410300
+ACKNOWLEDGEMENT NUMBER: 504967659
+Header Length: 32
+URG : 0
+ACK: 1
+PSH : 0
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 501
+Checksum : 0x6449
+Urgent Pointer : 0
+
+
+
+pack#5
+
+: Length of packet: 54
+--------Ethernet Header-------
+Destination Address:98:da:c4:7b:7d:10
+Source Address:00:15:5d:00:67:08
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 40
+Identification Number : 0x3fba
+Time to live : 64
+Protocol : 6
+Checksum : 0x6a6d
+source IP:192.168.0.106
+destination IP:52.46.155.104
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 55054
+DESTINATION PORT : 443
+This is a SSL packet
+SEQUENCE NUMBER : 2231059097
+ACKNOWLEDGEMENT NUMBER: 3100390561
+Header Length: 20
+URG : 0
+ACK: 1
+PSH : 0
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 501
+Checksum : 0x90c3
+Urgent Pointer : 0
+
+
+
+pack#6
+
+: Length of packet: 60
+--------Ethernet Header-------
+Destination Address:00:15:5d:00:67:08
+Source Address:98:da:c4:7b:7d:10
+Ethernet type: 800
+
+--------IP Header-------
+IP Version Number: 4
+IP header length is 20
+Type of Service : 0
+Total Length : 40
+Identification Number : 0xdce
+Time to live : 227
+Protocol : 6
+Checksum : 0xf958
+source IP:52.46.155.104
+destination IP:192.168.0.106
+
+--------TCP Header-------
+this is TCP protocol
+SOURCE PORT: 443
+DESTINATION PORT : 55054
+This is a SSL packet
+SEQUENCE NUMBER : 3100390561
+ACKNOWLEDGEMENT NUMBER: 2231059098
+Header Length: 20
+URG : 0
+ACK: 1
+PSH : 0
+RST : 0
+SYN : 0
+FIN : 0
+Window Size : 950
+Checksum : 0x8da8
+Urgent Pointer : 0
+
+
+
+pack#7
+
+: Length of packet: 133326199
+--------Ethernet Header-------
+Destination Address:00:00:42:00:00:00
+Source Address:98:da:c4:7b:7d:10
+Ethernet type: 15
+

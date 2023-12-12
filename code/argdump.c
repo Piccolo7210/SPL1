@@ -5,12 +5,32 @@
 #include "icmpRead.h"
 #include "hexdump.h"
 #include "arpRead.h"
+#include"SynFlood.h"
+#include"Realtimepacket.h"
 void pipeline();
 void commandLine(char *pcapfile[100]);
 int main(int argc,char *arg[]){
+	int i;
 	if(argc==1)pipeline();
-	if(argc==3)commandLine(arg);
-
+	else if(argc==2){
+		char str[100];
+		for(i=0;arg[1][i];i++){
+			str[i]=arg[1][0];
+		}
+		str[i]='\0';
+		if(strcmp(str,"live")==0){
+			Realtimepacket();
+		}
+		else{
+			printf("Wrong Format!!!");
+		}
+	}
+	else if(argc==3){
+		if(arg[1][0]=='-' && arg[1][1]=='S')SynFlood();
+		printf("\n\n\n\n");
+		sleep(1);
+		commandLine(arg);
+	}
 }
 void pipeline(){
 	unsigned int value=0;
@@ -141,6 +161,7 @@ void commandLine(char *pcapfile[100]){
 	packetlen=0;
 	}
 	fclose(fp);
+	if(!strcmp(pcapfile[1],"-S"))SynFlood();
 }
 
 

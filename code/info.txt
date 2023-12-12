@@ -1,43 +1,44 @@
 ***********************TCP Packet 1 *************************
 
 IP Header
-     Source IP         : 23.58.14.7
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 60  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
      Type Of Service   : 0
-     Identification    : 465
-     TTL               : 52
-     Checksum          : 24226
+     Identification    : 25805
+     TTL               : 105
+     Checksum          : 10776
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 45148
-     Sequence Number      : 3771152675
-     Acknowledge Number   : 4211279176
-     Header Length        : 32 BYTES
+     Destination Port     : 59072
+     Sequence Number      : 3705484081
+     Acknowledge Number   : 1946750954
+     Header Length        : 40 BYTES
      Finish Flag          : 0
-     Synchronise Flag     : 0
+     Synchronise Flag     : 1
      Reset Flag           : 0
      Push Flag            : 0
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 501
-     Checksum             : 39856
+     Window               : 65535
+     Checksum             : 11160
      Urgent Pointer       : 0
 
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 34 01 D1 40 00 = 34 06 5E A2 17 3A 0E 07
-000010  C0 A8 00 68
+000000  45 00 00 3C 64 CD 40 00 = 69 06 2A 18 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB B0 5C E0 C7 39 23 = FB 03 05 48 80 10 01 F5
-000010  9B B0 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+000000  01 BB E6 C0 DC DD 33 31 = 74 09 0F EA A0 12 FF FF
+000010  2B 98 00 00 02 04 05 A0 = 01 03 03 08 04 02 08 0A
+000020  17 27 B5 E0 DD B4 72 59
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
 
@@ -46,22 +47,22 @@ TCP Header
 ***********************TCP Packet 2 *************************
 
 IP Header
-     Source IP         : 23.58.14.7
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 83  Bytes(Size of Packet)
+     IP Total Length   : 151  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
      Type Of Service   : 0
-     Identification    : 466
-     TTL               : 52
-     Checksum          : 24194
+     Identification    : 25806
+     TTL               : 105
+     Checksum          : 10684
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 45148
-     Sequence Number      : 3771152675
-     Acknowledge Number   : 4211279177
+     Destination Port     : 59072
+     Sequence Number      : 3705484082
+     Acknowledge Number   : 1946751471
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
@@ -69,117 +70,409 @@ TCP Header
      Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 501
-     Checksum             : 46804
+     Window               : 16386
+     Checksum             : 39459
      Urgent Pointer       : 0
 
 ********* SSL RECORD LAYER **********
-     Record Type: Alert
+     Record Type: Handshake
      Version: TLS 1.3
-     Length: 6671
+     Length: 22530
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 53 01 D2 40 00 = 34 06 5E 82 17 3A 0E 07
-000010  C0 A8 00 68
+000000  45 00 00 97 64 CE 40 00 = 69 06 29 BC 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB B0 5C E0 C7 39 23 = FB 03 05 49 80 18 01 F5
-000010  B6 D4 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+000000  01 BB E6 C0 DC DD 33 32 = 74 09 11 EF 80 18 40 02
+000010  9A 23 00 00 01 01 08 0A = 17 27 B6 CE DD B4 73 49
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  15 03 03 00 1A 0F 2B 90 = 01 0C B6 FA D5 49 B0 7D
-000010  D8 F4 D6 AF D8 41 07 7D = 10 09 48 38 0C 9E 55
+000000  16 03 03 00 58 02 00 00 = 54 03 03 CF 21 AD 74 E5
+000010  9A 61 11 BE 1D 8C 02 1E = 65 B8 91 C2 A2 11 16 7A
+000020  BB 8C 5E 07 9E 09 E2 C8 = A8 33 9C 20 AC 29 15 3C
+000030  7C D3 67 EA 0D 33 76 E3 = 17 C9 4B 6D A1 AC BC 77
+000040  23 72 A5 6E 99 30 56 8A = 37 E5 44 B4 13 02 00 00
+000050  0C 00 2B 00 02 03 04 00 = 33 00 02 00 18 14 03 03
+000060  00 01 01
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 3 *************************
 
 IP Header
-     Source IP         : 23.58.14.7
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 4584  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
      Type Of Service   : 0
-     Identification    : 467
-     TTL               : 52
-     Checksum          : 24224
+     Identification    : 25807
+     TTL               : 105
+     Checksum          : 6250
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 45148
-     Sequence Number      : 3771152706
-     Acknowledge Number   : 4211279177
+     Destination Port     : 59072
+     Sequence Number      : 3705484181
+     Acknowledge Number   : 1946751908
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
-     Reset Flag           : 1
-     Push Flag            : 0
+     Reset Flag           : 0
+     Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 501
-     Checksum             : 39820
+     Window               : 16384
+     Checksum             : 38065
      Urgent Pointer       : 0
 
+********* SSL RECORD LAYER **********
+     Record Type: Handshake
+     Version: TLS 1.3
+     Length: 47874
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 34 01 D3 40 00 = 34 06 5E A0 17 3A 0E 07
-000010  C0 A8 00 68
+000000  45 00 11 E8 64 CF 40 00 = 69 06 18 6A 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB B0 5C E0 C7 39 42 = FB 03 05 49 80 14 01 F5
-000010  9B 8C 00 00 01 01 08 0A = EA 2B DE A9 C9 2A 94 77
+000000  01 BB E6 C0 DC DD 33 95 = 74 09 13 A4 80 18 40 00
+000010  94 B1 00 00 01 01 08 0A = 17 27 B7 C8 DD B4 74 3A
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  16 03 03 00 BB 02 00 00 = B7 03 03 28 02 D1 16 2D
+000010  38 F8 CA 1E 11 BF 3D 6A = 33 4B D9 E1 51 94 9C E5
+000020  13 78 7C 5D 0F E2 33 76 = 83 9B 68 20 AC 29 15 3C
+000030  7C D3 67 EA 0D 33 76 E3 = 17 C9 4B 6D A1 AC BC 77
+000040  23 72 A5 6E 99 30 56 8A = 37 E5 44 B4 13 02 00 00
+000050  6F 00 2B 00 02 03 04 00 = 33 00 65 00 18 00 61 04
+000060  05 9F AB DA CC 97 AA 17 = AD CC 0F 15 68 71 55 AC
+000070  48 44 29 F5 8D 43 92 5C = E8 79 35 10 F7 00 37 96
+000080  D5 6E 09 51 B7 20 74 42 = F6 29 4C 93 8C 94 59 84
+000090  67 28 55 98 97 3C 08 AB = 91 74 20 1C EC A6 12 74
+0000A0  35 DD DE D2 64 47 4B 6C = 46 86 B3 57 5E 32 DB 37
+0000B0  42 75 E3 28 FC B4 CC BE = 10 6E 1A 62 68 69 0A 18
+0000C0  17 03 03 10 EF C4 21 60 = DE 87 B9 6F 22 4A 7C 4F
+0000D0  AA 37 E7 8B 6F 41 DC B0 = A8 B3 98 30 A1 EE 40 B4
+0000E0  0B 29 57 B2 E5 C6 86 A9 = 66 45 89 C3 1A 68 37 F9
+0000F0  D5 64 34 68 ED 0C A0 FA = C9 44 2F A0 96 5E 70 AA
+000100  E6 59 9B 99 50 3B 0C EF = 6B 79 AE A7 D6 D1 E5 3C
+000110  0C 74 87 CA 75 5C CE D2 = 88 3B 21 AA 71 E9 BB 3C
+000120  5B 60 79 E4 80 CF 54 75 = A0 79 5A 04 3B 06 81 BA
+000130  7C E1 03 0C 8D 19 80 40 = 9A 52 1B 2E 6E FB AD 13
+000140  88 91 00 DA 57 43 0D 9E = 78 C2 B1 B8 61 2C 3C 13
+000150  2D 13 05 1D AF 16 59 36 = 57 B8 CC 8B CC 59 BD 82
+000160  32 9A 4C 0F 4D A8 B6 4C = D8 E6 0E 47 BF 62 00 91
+000170  5F AE 90 82 7C BF 80 9F = CA FA 15 4E 43 7A 27 01
+000180  54 45 F9 91 EA 33 50 C4 = 88 6F 86 E9 BA FD B9 C6
+000190  9B 95 C1 32 C4 F5 08 8C = 41 F0 39 05 CC 72 C5 CD
+0001A0  7B 90 9D 52 2E 27 B1 9C = 7C 22 C7 01 44 91 85 F1
+0001B0  AE F3 4B 4D F0 A3 FF 68 = 92 A4 6F 94 27 A0 FD 34
+0001C0  9F 2F C1 0F C9 E5 8F 95 = 11 BB 9B 99 58 CB 66 B8
+0001D0  8B 00 94 4E 96 70 A4 49 = E3 5A 39 16 12 02 D6 04
+0001E0  AD 55 55 D4 3C AD BE D1 = 65 CB 45 8C 28 C5 F8 C2
+0001F0  CC CD 7A F1 FE A3 38 0D = 09 3E 52 E9 62 E1 49 9F
+000200  01 5F BC 2E D5 81 37 1D = 3E FF 5A 01 F8 B2 5B AB
+000210  C3 A2 EE 11 EC 0F 24 C6 = 06 7B 85 96 AD 46 60 06
+000220  E1 AE C0 5B 68 90 15 E8 = AD 27 AF 49 CC A9 9A AB
+000230  A6 92 02 97 29 13 A9 87 = A1 6E 6D 0B 1C 75 C6 AC
+000240  BB 43 0D 53 00 EE FE 27 = 0F 68 72 AD 06 12 F8 C7
+000250  EC D8 22 BB D5 09 5F C7 = D2 E9 37 DF 72 3F 6E 4F
+000260  01 82 80 E8 72 45 1F 37 = FB 12 8D 72 5E F8 11 78
+000270  ED EB 90 DD D3 C1 5D 7C = 74 71 51 A5 DC AC 9C 7B
+000280  E0 A8 94 E3 BA 90 48 D8 = 36 09 8F A5 7C D8 12 15
+000290  E6 E7 9C 7C 06 6A 2B 96 = F7 D5 83 09 22 67 8D 1E
+0002A0  F2 71 D9 1A 29 6A EF E9 = 3E 9F 08 F0 C3 49 51 67
+0002B0  00 35 69 08 EB 90 BF 15 = 15 0B 5C 17 89 FD 2B 7D
+0002C0  7F E2 7E 46 DE 5E BE 15 = 44 DA 99 62 79 92 6D C0
+0002D0  C9 B6 B1 F1 35 E0 49 47 = BA FD A9 8E 66 DA BD 00
+0002E0  53 AA 90 03 99 E5 D7 BB = 17 DC 9B 0D 7F B2 BC 0E
+0002F0  AA 2F AB B3 AC 4F AD F0 = 12 D9 AD ED B7 81 B4 6C
+000300  61 FD 77 CA 28 CC F4 4C = 6E CC 5F E0 EF 73 D6 30
+000310  A4 CC EB 7C BD F9 62 C9 = 68 95 25 DF 88 55 E3 FF
+000320  2A 88 4E B1 45 7A 4B B5 = 0A 76 9F 2C CD 03 04 A0
+000330  2E 52 F8 EE 31 38 2E 22 = F7 DF AC 0D 28 81 B4 4F
+000340  BA 2A B5 CD 38 03 F4 53 = AA E0 ED 95 0F 48 9C 25
+000350  8B 82 28 A1 3E A9 C9 B2 = 77 5A EF 0A D6 82 50 D3
+000360  BB 65 3A 77 FA 94 14 20 = 71 5C B7 CB 6D 44 40 7F
+000370  D2 22 2F F3 E7 EF 82 1E = B1 1C E3 FF CA E8 82 3C
+000380  06 C6 BA C0 86 25 2A B3 = 5B A0 FF C6 52 2B 7F A7
+000390  EA 80 21 59 14 48 FA 8D = D5 0E 18 EF 43 E4 3E 31
+0003A0  C0 CC D7 82 05 74 93 DD = FE 4E E8 9D 60 F0 64 BC
+0003B0  A3 3C 1C AE 66 9D 69 75 = 76 C3 7A 85 D4 E7 B5 BD
+0003C0  F8 B2 B3 D2 69 F4 EE 34 = 6A F0 63 5B 84 05 47 51
+0003D0  8C 28 61 6F 0F 6A 1F 80 = D2 F1 76 65 B9 4D D1 AA
+0003E0  1F E1 E9 6E 7F 0E 4D BE = 54 1E 5A 02 88 C5 62 AA
+0003F0  21 AF C2 03 70 45 7E 2E = 9A 8B 51 04 DD 7B 44 F9
+000400  EC 06 92 C1 22 89 70 CF = D2 43 08 B9 21 C5 9A 5B
+000410  52 3A A3 C0 BD 37 96 8C = 6E 6C 1E 8A 3C D0 2F C1
+000420  82 E9 D4 DF 0A 82 33 B9 = B9 EA D6 05 0D BA 40 2A
+000430  FF C3 C7 DD 86 21 65 8E = F3 3C B9 F9 62 ED 04 26
+000440  A0 13 8E A1 A9 42 49 D9 = 29 E0 FB 0E B5 9B 75 A1
+000450  52 CD CE DA DE 20 63 50 = 6F 41 F6 E2 A8 FF 7B 63
+000460  0B A6 9E A4 BC 4D E5 B3 = 65 D8 62 38 E6 8D 30 B3
+000470  BC FE D8 0B FF BF 1B FD = 9E BA 4F E1 1B 05 F6 4C
+000480  16 9C 79 46 32 92 96 A8 = 8A 4C 1A A4 BD 3D 86 03
+000490  3F B7 E8 7B D4 73 61 76 = 6F 61 44 49 9F 0C F3 0C
+0004A0  8F 58 6E 1A DC 72 75 ED = 20 9B 10 06 9B 2D 38 8A
+0004B0  8E BC A4 2B E4 C5 1F 03 = E9 9E 74 09 3F AD E5 2F
+0004C0  AF 3B 60 B7 B3 66 D4 32 = 76 46 41 44 73 A7 C6 68
+0004D0  4A 55 65 3F 34 0D 91 A9 = 84 B9 B6 48 C4 8B A7 0C
+0004E0  EE 60 9F 08 B3 49 8A 45 = 5F E5 B1 B2 29 4F D9 14
+0004F0  10 88 E0 9A CE B7 89 27 = D5 14 B1 60 14 00 5F 87
+000500  52 2F 20 58 97 F3 FB 8C = 9E ED 00 12 46 DA 62 C1
+000510  9B B7 15 66 8F 40 77 95 = 8D 32 96 75 A3 F7 C7 8A
+000520  30 C5 BC DB 75 E1 CC 96 = C1 56 34 FC 8F CA F5 08
+000530  E0 56 13 98 0D F5 29 4B = 8A 09 16 D5 41 6B C9 DB
+000540  B5 BC 30 20 A1 6E AC F7 = 4C 0A 9A 26 2C 5A CD 2F
+000550  7F 16 16 42 46 9E D4 15 = 37 C0 49 AE E8 2D 0E 97
+000560  CC F5 4C B6 12 F2 93 B3 = 96 79 0D 5C 69 2E B7 92
+000570  B9 21 EA 50 8E B7 F2 16 = 90 78 1A 43 71 3E 5F 1D
+000580  05 DE 40 E7 EE 74 51 68 = 60 E8 AF 88 26 AD B3 55
+000590  F0 45 36 5C BB 63 61 23 = A3 4D 24 10 9A 3E EE B2
+0005A0  D9 07 62 7C EC 15 6A B4 = FA 81 FC 69 13 AE 96 B7
+0005B0  5E C2 BF 9F 0D 83 31 E9 = 2F 06 AC F5 9A 6A 28 4D
+0005C0  C1 8D 25 08 95 2A C0 1A = 78 F2 E8 30 90 97 4C F7
+0005D0  6B F8 2B 4C 5A FB FF B9 = 89 8C 01 E1 F9 68 FC 77
+0005E0  89 4A 46 65 F7 70 F0 E2 = 50 3E FA A6 77 A2 9D 77
+0005F0  2A 49 67 B7 BA A5 D2 AD = 06 94 AA EE EC CE 4A 1C
+000600  00 8F 2E AB 2E 68 12 17 = D9 91 CA 0B 56 28 4E F5
+000610  D9 3B 58 09 6A F6 9D E8 = 8E 7A C8 4F 84 8A B4 47
+000620  22 4E D4 F3 B1 FA E5 FA = C2 A6 B1 53 A2 19 6A CA
+000630  C4 FD 72 AE 9D 8D 7F 85 = 87 C2 07 27 2F 47 4B 74
+000640  80 42 71 FC F2 7A 8C 6F = 9D 62 98 59 02 F3 C9 6F
+000650  26 0D 47 6C 85 D7 B8 DB = 15 D8 61 AE 79 7D 66 1B
+000660  6A 07 9B D5 89 DA 73 8B = 24 67 EB 2A 08 84 F9 F2
+000670  B1 31 72 70 24 42 19 2C = 0C 20 60 B8 64 A9 48 95
+000680  75 86 07 C9 A2 A2 08 3E = 90 81 ED 29 BD AC 1C B5
+000690  E2 F0 49 DE 1A A5 F6 1D = CE F8 FE F7 85 65 FE 94
+0006A0  13 48 19 BD 8F 54 A5 19 = 93 AC EB F5 4F BB 02 0B
+0006B0  7C 62 87 45 77 9C 60 AF = 5C 57 F1 50 9B 0A 86 D5
+0006C0  12 FC 96 B6 74 A7 5D 2F = 91 D3 09 99 B3 11 D6 9D
+0006D0  6B 5B 79 5C 83 87 04 9E = C1 98 BC 57 57 70 16 DF
+0006E0  9D A1 B9 75 20 80 67 F3 = DE 56 BA E4 54 82 FD E4
+0006F0  2C 57 F0 4D 83 8B 43 12 = 1E 36 79 E9 3A F8 D7 32
+000700  E9 35 97 04 85 C2 A7 96 = 71 35 8C 20 05 31 9F 62
+000710  97 48 AD 9A 20 11 D9 D3 = F1 EF 91 52 84 F4 0F DC
+000720  84 AB 1F 86 11 03 F0 23 = CA 75 B7 58 F4 11 3C E5
+000730  FF 9D 61 BF 81 2B B6 26 = 3E FB 17 A8 ED B3 0E 8B
+000740  D6 E2 40 75 86 84 A0 A6 = 44 76 5F DE 3A DB CF 90
+000750  4D C2 03 3B 24 36 67 23 = 3C 41 B4 FC 42 18 E1 6C
+000760  B6 59 EE CD AC 85 BE 76 = C2 02 C6 71 BE 2A 3B 09
+000770  C5 4E 0D 7C F3 E8 B5 A4 = C4 44 D7 8C 82 F8 EA 0D
+000780  21 23 29 F2 FB 36 61 ED = 62 3C 43 5B DB 93 9D E4
+000790  CD 9F 70 94 6A A5 E9 A4 = 44 55 D8 51 D7 9D 2B 3C
+0007A0  5D C6 2E B7 56 13 C3 19 = EC A2 10 B2 C7 5A 74 E1
+0007B0  F9 45 6F 8D 6B 6A B4 80 = 38 50 79 9F 16 5C 26 D0
+0007C0  96 77 37 94 B0 5D FD A5 = 85 43 3F A2 80 E3 1E 21
+0007D0  88 D9 44 0F 90 BA B0 46 = C6 E0 07 A8 AF 50 C8 2B
+0007E0  7A 75 0B 26 97 9A 2C 8B = 76 08 69 7E 18 F6 EF 3F
+0007F0  80 14 0C C8 97 61 A6 C1 = 4F A6 34 BE D8 19 76 25
+000800  19 8D 27 7E 8C 8F 5C 0A = 0A BC 45 5A 3E 34 31 89
+000810  C2 8D 24 5A DB F2 56 CF = B1 35 13 5C 99 27 15 E6
+000820  19 53 5D 99 5C B5 B4 A2 = 28 8C 28 54 BF 34 8D 44
+000830  50 CF 8D 24 A7 B4 E4 71 = A8 4E 42 66 C8 2D 08 70
+000840  1B F2 1F 2F 60 E8 67 D6 = 1C B6 57 7B 24 2F E2 5B
+000850  EB A0 9B E7 32 3E 64 80 = 01 05 A2 B2 FF 6B 5D 0B
+000860  5D 55 4C 0E 8E F3 11 1C = 27 C9 78 5D 1A F0 E8 DD
+000870  4D A5 77 AE A4 4A 08 F9 = 7A E3 12 11 26 56 39 54
+000880  14 33 A6 71 FB 85 44 F7 = AA 79 D7 1A E3 60 97 25
+000890  CC 18 4D 9B C4 8C 8F 63 = 8C 6C F5 75 62 AE 19 09
+0008A0  2B E1 E9 C2 A6 D4 47 D6 = A0 D1 F0 CD A3 BD 9E 67
+0008B0  97 BD D3 18 1A 20 48 FA = C6 C0 D6 BE 97 16 19 FD
+0008C0  94 F5 3F 86 7C 8F 50 91 = 62 2A 04 5C 07 1B 2C BB
+0008D0  22 EB 70 4D 81 59 ED 03 = 3D 58 82 A7 E4 58 13 15
+0008E0  93 F7 2A 2F 7D E3 A0 24 = 29 86 AB 54 C9 98 D8 54
+0008F0  66 01 67 46 9D 12 EB 3A = 6D 09 80 78 77 B2 14 85
+000900  D3 77 56 58 83 B9 31 EE = A2 6E EF 52 A2 1A 97 E5
+000910  56 DB 22 21 24 F0 B5 03 = 6C 4C 3C 34 39 71 89 7F
+000920  2C B4 34 5F 13 42 FD 04 = 8C E8 11 FC EF C8 CE 11
+000930  BC F4 EB 23 3D 99 6D 78 = C1 15 5C E4 FA 72 C6 04
+000940  90 06 4F 21 19 E8 8D EC = 21 46 F2 23 85 02 ED 33
+000950  1E C2 B8 6C 0B FC 48 59 = CF 43 E7 AC 13 65 FB 12
+000960  90 F6 BF 64 BD 9C 54 B2 = 3D A7 86 95 80 67 97 47
+000970  ED A8 76 85 0C 93 33 BB = 7F 55 49 73 E0 72 F1 F7
+000980  B0 B6 57 C3 D4 88 38 F6 = 09 5A 7B E3 BB 7F D6 E2
+000990  C9 64 49 7C ED 24 A3 85 = 93 F5 EF E6 7B D6 2C 91
+0009A0  F0 30 0E 74 15 CE E6 81 = 51 23 E4 55 39 B7 A3 F8
+0009B0  30 20 6F 07 E7 88 74 07 = E0 00 0D 4F 57 1F 5C 2E
+0009C0  56 B5 6F 2A 34 08 A8 AE = 18 74 DB 09 34 19 16 A3
+0009D0  6C 9E A9 C0 6D C4 87 27 = 62 73 8C CA CD D8 DD 09
+0009E0  9E 14 43 34 35 B3 0D CB = 28 A4 BD DC 42 3F 83 93
+0009F0  65 BA 22 D8 B9 EC AF A4 = 09 A1 9F D9 DC 95 D9 18
+000A00  5B A8 FE 12 27 58 9E C9 = C3 B8 8E 09 3A E6 B4 5B
+000A10  5D E6 E8 37 E2 8C 27 FA = 62 A8 CC FD 32 DD 43 53
+000A20  AB 40 C3 10 74 C2 0A E6 = 56 5A 71 4C 66 D1 54 30
+000A30  B9 2F 7D 8E 8C 0D 87 76 = 92 95 BF 8A C9 6E E6 38
+000A40  63 D7 62 6A B5 E8 C3 5B = 4A A0 FF EC 96 04 BD 27
+000A50  DE 7C 09 3B DD C9 0C AF = 65 A5 1A EA D2 1D B1 CC
+000A60  D1 A6 94 71 84 F7 2E 9E = C6 DF 81 AF 19 FE 30 B2
+000A70  16 BB B9 35 97 6A B0 03 = B1 FD 6B A8 4D 0D 96 C9
+000A80  66 7E C4 6F 8A ED 53 B8 = 1D 47 27 66 20 DA 0F A4
+000A90  61 95 57 42 09 B4 71 7E = D6 06 74 B5 B4 E7 4B 73
+000AA0  5D D6 C0 B4 FB D6 6D 4B = FD B6 6D 89 3B 80 BB D5
+000AB0  81 F3 88 70 B8 7F BC D2 = BD 68 A1 AA 7E 4E 6E A4
+000AC0  D5 16 F4 E1 38 35 6C 45 = F8 6B B0 23 29 F6 DE AD
+000AD0  91 5E 33 CA FD 85 C9 21 = 03 4D 8C 16 E2 74 85 72
+000AE0  EF 1D 18 6E FA 55 E5 E6 = BB 0B 0D BB 95 31 59 82
+000AF0  6A 3C 7E F0 C2 4C 10 C2 = AB AB 11 7D E9 0C 4D 02
+000B00  76 26 A1 A4 05 43 66 1F = 9B 8E 06 F5 D6 68 32 1D
+000B10  19 38 FA 6C 7B 38 49 C2 = 2E B8 AC E9 80 CF 57 B6
+000B20  AB 97 78 57 22 1C 88 F0 = 3F 6B C9 63 A9 77 68 BB
+000B30  BB F5 87 CF 54 80 E7 3D = 6E 67 42 B7 41 40 56 8F
+000B40  EB FD F9 C6 59 1B 0F F3 = 2E 9E 40 ED 4B 19 0E 27
+000B50  C9 23 4A 1F ED 99 F7 99 = 1F 9B 35 BB 66 A7 DF 00
+000B60  43 DF 29 C0 AF 4A 9D 77 = 42 BF EB 2E A1 7E 3B 38
+000B70  E6 7F 92 4D AA 46 20 00 = D0 31 76 01 5A FA DB 5E
+000B80  C2 AE 40 9C F9 AF 6A E5 = 7B B6 C6 B2 AB AB 10 FB
+000B90  20 45 69 52 45 D3 6F 64 = 15 C3 78 8A B2 C4 F5 46
+000BA0  A4 74 1B 50 53 E2 8E 04 = 60 36 54 62 5D 2C 90 82
+000BB0  2C 2A AA 28 AF 81 68 88 = 01 18 BD AA 72 FD C7 C3
+000BC0  A0 88 5A B4 B5 16 AB 99 = 18 4E 6C 02 C6 F1 0D 66
+000BD0  5D DA 75 64 36 7E D2 BC = BC 2B BC 3C 1F 8A BD 23
+000BE0  38 C8 99 82 A9 06 53 3D = AD AD F1 A4 6B FE 59 58
+000BF0  DD B3 B9 A5 77 2A 59 47 = 05 80 F9 B0 F5 1B 4D 83
+000C00  BD C3 E2 0A 77 83 C0 D4 = F7 70 18 73 0E 31 D3 4B
+000C10  3D 9D C4 5A A4 DE 04 2E = 94 DE 95 7C 84 56 B7 F6
+000C20  D7 17 D7 3F 60 80 03 E8 = 08 65 0D C9 5A C3 24 45
+000C30  5A 0B B7 1E 0A 98 AC 5B = B5 A0 61 6B 19 1B 85 36
+000C40  47 8F 99 59 10 DE 4F E5 = 5F 9A B5 BB 79 1D 90 D7
+000C50  47 25 D5 1C 9A E4 85 74 = 26 96 8A 09 7C 9D 3D 06
+000C60  D2 30 D1 12 EF B3 70 E6 = C1 AD E4 74 A0 59 BC 4D
+000C70  D4 C4 A9 34 30 AB 82 60 = 59 87 9C 65 0D 6A D4 06
+000C80  19 70 39 D4 0F CA 80 CB = 95 72 58 C7 89 8E E5 6D
+000C90  76 5C 82 E2 1A 6F 84 08 = D6 0E CA 6E B6 C8 19 00
+000CA0  61 7A 0C 03 B3 95 3E 65 = 2D A7 2C 82 37 5F 79 E0
+000CB0  50 16 5C 4D 5F 4A 6F 46 = 52 CB 1D ED 97 26 E1 69
+000CC0  D8 E7 0B F7 AF FF 93 BA = 30 40 CC 3F 21 23 9E 27
+000CD0  AD 4A 36 4F F8 57 17 8F = D4 EA B5 D4 4D 6F 8C 32
+000CE0  60 70 D4 1D 5A 6B F8 D5 = F7 44 0E 8C 77 3E 3D 4E
+000CF0  98 E6 7C EF 41 0A 98 C9 = 0A 24 50 7F 0E 71 F0 50
+000D00  C7 51 DD 66 B9 7D 36 95 = E6 4D BA 2C 56 FD FB 23
+000D10  D3 C0 2C CF FA 72 1E D6 = F8 3D 98 A5 B5 20 65 1A
+000D20  86 1A 77 59 0D 3D 35 29 = 31 76 BE CD 6C 76 3C 8A
+000D30  23 09 B0 36 88 59 14 9C = A9 C2 A6 E9 18 45 90 A7
+000D40  AD 3C F6 B2 34 18 D0 6A = 43 7A 33 E5 40 55 58 FB
+000D50  59 7A AF 3C F5 15 03 91 = 55 B7 FB 02 2B F5 A6 EB
+000D60  81 2A 85 39 C9 67 4E CD = 60 04 9D 35 92 22 9F 85
+000D70  80 14 10 39 BB 5A B8 EF = 29 64 80 D1 EA 19 CB 64
+000D80  96 55 9C B2 A5 77 7E 35 = 92 29 85 A1 57 11 75 51
+000D90  9C 70 89 E4 97 EC 41 9C = D5 4E B6 FB 69 0D 1A E3
+000DA0  33 CE 06 48 D8 11 3E 0C = 1F FD B1 56 E1 BE F5 DE
+000DB0  91 53 B7 06 0A 5F 7D BF = 02 FA F1 D7 A8 05 C4 13
+000DC0  3F 0D 14 66 D3 0D 22 29 = F8 8A D1 90 7E 01 58 E5
+000DD0  39 11 32 E2 C0 AD 32 1D = 60 C6 23 F6 51 E8 D2 25
+000DE0  B4 60 C8 20 4C 82 47 3D = 30 8F 88 80 EA 45 90 35
+000DF0  F9 E9 FA 83 DF EB E5 CB = F2 16 C8 4C BA 36 62 80
+000E00  DA 69 63 A3 CC A6 03 17 = D7 BA 96 BE 1F 5A 16 7A
+000E10  1C 75 6F FE D7 23 D9 28 = 01 1C A7 B7 83 35 93 44
+000E20  38 A2 34 AE 9D 44 32 7D = FF DC 14 7D CF 4D 20 90
+000E30  83 4C 4F 95 B1 C3 AE 2E = 25 A9 38 B9 2A A6 27 43
+000E40  81 2C 77 C5 A0 85 B2 B6 = DB C1 A5 BD A7 0D 9A 0E
+000E50  02 10 28 78 EE A6 14 A3 = D6 19 A8 A9 12 D1 70 7E
+000E60  D5 9C FE 36 05 5A 67 84 = D2 38 FA FF 7D 0F 46 78
+000E70  63 D5 B0 60 60 E7 D3 9F = E9 ED A3 40 E2 83 FC 6D
+000E80  03 43 B4 CE F3 4D 72 A4 = B4 B1 7C 3C 33 E8 3D 48
+000E90  1D F9 D5 D9 EC 0D 3B 81 = 74 C6 4F 65 08 F6 B8 BE
+000EA0  99 3B 11 BD E6 15 41 DE = 62 04 A7 91 4C AE 24 A9
+000EB0  2D 84 3D 18 31 07 6E 21 = 8F FC FB DB 6D 95 B6 F8
+000EC0  53 06 9A 74 5B 1A D4 AA = 3A 79 C3 B5 A9 80 E0 88
+000ED0  5F 2F E0 A9 81 37 72 EC = 03 AE F4 CF 92 63 46 28
+000EE0  1A 24 06 0B E1 9C 9C 72 = 41 21 86 79 DA 69 82 48
+000EF0  8D F5 72 8C 5F 72 4B 60 = A9 72 70 AD 9D ED 05 33
+000F00  09 75 57 0F 3A 9A CA E0 = 0D 47 DC AF A4 E6 A7 A9
+000F10  48 7A F8 B3 3B EE 05 9D = 8B 9C 24 93 ED B1 F0 14
+000F20  1A 61 6F 6E 7B A0 39 76 = 07 DA 6F 00 6F 24 9D 26
+000F30  09 C3 E6 3A 79 8B B0 E2 = 77 73 A8 C4 6C C0 9D 6B
+000F40  95 FE AF 91 53 52 45 2F = 83 58 55 9E CA 5A 4E 9C
+000F50  2C 55 B1 4C 77 64 F3 3B = E1 FE CE 4C C4 8C 64 FC
+000F60  12 49 27 27 D2 78 CE D4 = 92 53 4B 3A 15 0D 08 8E
+000F70  0D C7 24 AF CC E2 47 6A = C9 B2 5F 22 E3 45 DC FF
+000F80  1B D1 49 2C 75 D6 4E 8B = 03 21 4F D3 2F 0E 3E 6A
+000F90  08 60 A9 31 51 07 04 16 = 5E 6D 24 56 83 FA F3 D4
+000FA0  53 46 B8 5F A7 47 81 66 = 03 70 D3 C9 90 49 8E 1E
+000FB0  4F 5B 11 53 02 A6 50 0A = B1 32 68 A7 2E 69 C4 F0
+000FC0  AD F2 F6 41 CD 33 95 34 = 82 D0 69 75 07 D3 2F 7F
+000FD0  A4 D3 59 E8 D1 EA 54 B1 = 95 36 39 91 6F 29 6F 04
+000FE0  34 E7 B3 3A 33 06 97 C3 = CD 4D D1 A8 68 AF AC F5
+000FF0  7E DE 1A A0 A9 B2 D6 84 = 5C 49 AB 8C 27 5C B7 2B
+001000  0A 99 5C 15 C8 4E CE DA = F7 46 8A DA F4 46 BE BD
+001010  03 74 0A 1D 7A C4 47 43 = 1F BF 44 6E 2C F2 8F 15
+001020  D6 26 2D 5F 99 D9 51 8F = 0E C4 CF 2E 5F 05 72 12
+001030  3F 39 0D 26 BC 65 CC C1 = 40 F5 9E 63 84 78 E6 3F
+001040  3E F1 E3 70 DE 38 E1 9B = 34 3E AF 0F 8F 54 BF 3C
+001050  3A 38 47 10 A4 BC B5 8E = F5 CD 29 92 27 0A EE 1B
+001060  04 E4 EF 90 D4 D7 E5 25 = 0B 22 80 0D 84 16 B3 59
+001070  55 A0 84 8E 8E 84 E5 F9 = 3E C0 5A 14 85 E5 AD 88
+001080  9B B1 A4 46 20 24 5D 96 = BD 47 8A 43 30 0E 2E D4
+001090  8B 9E DA 43 89 F5 C6 22 = C0 AA 57 B3 B5 79 39 BE
+0010A0  A8 C2 C7 B2 FC 5E 79 40 = AF 55 FA 38 F7 08 42 CB
+0010B0  C7 5A 04 7E B8 3E B4 FB = AF 15 5D 91 22 89 72 D8
+0010C0  76 E9 85 77 C2 9B D7 8F = BD 98 C5 86 C3 F4 35 75
+0010D0  4E 93 C8 2C 74 87 69 1C = C2 E7 8C FE F4 B8 CE 8B
+0010E0  6A 61 E8 C1 E8 01 85 11 = B2 65 19 60 17 64 BD EA
+0010F0  9F A9 24 2D 58 79 2D DF = C4 C5 99 1D 04 39 8B 44
+001100  86 4C C9 90 1A CC AD 64 = B9 06 18 8E D6 E0 32 72
+001110  40 64 D9 D1 8D F7 B0 B7 = D0 54 85 BF 4C BF 1C C4
+001120  67 9F 1F 8D 3E F2 E5 B6 = B7 53 A9 37 70 02 64 02
+001130  6F 9B 15 01 C2 50 DD 86 = CD 11 6C 1C C0 24 A5 57
+001140  7F 2C 52 CD B7 9F D4 5C = D1 61 35 7F A4 36 44 0B
+001150  F8 56 6B 10 1C 1D EA 68 = 3A 0D F4 CD 71 08 B4 D8
+001160  14 08 45 39 90 3A 90 B7 = 0D 20 72 7D D8 41 28 53
+001170  B3 18 86 FF CA 7F 6C 34 = B5 60 8A 0B F2 0B 28 B7
+001180  76 64 E8 7F AE F3 F5 DD = 7E 39 1C 3F F1 B4 77 F7
+001190  A5 04 30 BF 21 16 DF BB = 22 12 3C 5E 8D 9E A8 01
+0011A0  67 4E C6 F8 E5 3D 28 C2 = C8 9F 9F C5 25 1C 60 16
+0011B0  6F BA 14 A1
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 4 *************************
 
 IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 60  Bytes(Size of Packet)
+     IP Total Length   : 52  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 0
-     TTL               : 121
-     Checksum          : 60516
+     Type Of Service   : 0
+     Identification    : 25811
+     TTL               : 105
+     Checksum          : 10778
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141370725
-     Acknowledge Number   : 1240306988
-     Header Length        : 40 BYTES
+     Destination Port     : 59072
+     Sequence Number      : 3705488713
+     Acknowledge Number   : 1946753928
+     Header Length        : 32 BYTES
      Finish Flag          : 0
-     Synchronise Flag     : 1
+     Synchronise Flag     : 0
      Reset Flag           : 0
      Push Flag            : 0
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 65535
-     Checksum             : 4768
+     Window               : 16388
+     Checksum             : 63201
      Urgent Pointer       : 0
 
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 3C 00 00 40 00 = 79 06 EC 64 AC D9 A6 ED
-000010  C0 A8 00 68
+000000  45 00 00 34 64 D3 40 00 = 69 06 2A 1A 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 4D 65 = 49 ED 95 2C A0 12 FF FF
-000010  12 A0 00 00 02 04 05 84 = 04 02 08 0A 02 A4 28 0A
-000020  A3 DB 70 72 01 03 03 08
+000000  01 BB E6 C0 DC DD 45 49 = 74 09 1B 88 80 10 40 04
+000010  F6 E1 00 00 01 01 08 0A = 17 27 B8 BB DD B4 75 34
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
 
@@ -188,403 +481,201 @@ TCP Header
 ***********************TCP Packet 5 *************************
 
 IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 155  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7029
-     TTL               : 121
-     Checksum          : 4344
+     Type Of Service   : 0
+     Identification    : 25812
+     TTL               : 105
+     Checksum          : 10674
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141370726
-     Acknowledge Number   : 1240307652
+     Destination Port     : 59072
+     Sequence Number      : 3705488713
+     Acknowledge Number   : 1946753928
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
      Reset Flag           : 0
-     Push Flag            : 0
+     Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 262
-     Checksum             : 15670
+     Window               : 16388
+     Checksum             : 33446
      Urgent Pointer       : 0
 
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 25137
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 34 1B 75 00 00 = 79 06 10 F8 AC D9 A6 ED
-000010  C0 A8 00 68
+000000  45 00 00 9B 64 D4 40 00 = 69 06 29 B2 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 97 C4 80 10 01 06
-000010  3D 36 00 00 01 01 08 0A = 02 A4 28 3F A3 DB 70 A6
+000000  01 BB E6 C0 DC DD 45 49 = 74 09 1B 88 80 18 40 04
+000010  82 A6 00 00 01 01 08 0A = 17 27 B8 CC DD B4 75 34
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 00 62 31 EC F3 = FC 8B 5D 52 0A 05 47 8C
+000010  D1 3E 2C A7 01 9B A9 CA = 0E 76 FF 08 DD 46 A5 2B
+000020  DD BB A3 FE C4 F4 29 DB = 8A 90 3E 92 7D 79 AB 8B
+000030  49 03 D3 43 11 3F A6 32 = CF B7 6A 4E F9 33 DA 53
+000040  D2 24 5B DD D8 04 99 40 = 82 63 36 F5 1D FF BD 2A
+000050  DE DD DB DD 4F 27 FD DA = 06 B2 F8 EE 15 D9 C5 24
+000060  89 60 B6 E3 6D 81 1E
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 6 *************************
 
 IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 516  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7030
-     TTL               : 121
-     Checksum          : 4343
+     Type Of Service   : 0
+     Identification    : 25813
+     TTL               : 105
+     Checksum          : 10312
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141370726
-     Acknowledge Number   : 1240307828
+     Destination Port     : 59072
+     Sequence Number      : 3705488816
+     Acknowledge Number   : 1946753928
      Header Length        : 32 BYTES
-     Finish Flag          : 0
+     Finish Flag          : 1
      Synchronise Flag     : 0
      Reset Flag           : 0
-     Push Flag            : 0
+     Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 15487
+     Window               : 16388
+     Checksum             : 18901
      Urgent Pointer       : 0
 
+********* SSL RECORD LAYER **********
+     Record Type: Application Data
+     Version: TLS 1.3
+     Length: 52103
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 34 1B 76 00 00 = 79 06 10 F7 AC D9 A6 ED
-000010  C0 A8 00 68
+000000  45 00 02 04 64 D5 40 00 = 69 06 28 48 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 98 74 80 10 01 0B
-000010  3C 7F 00 00 01 01 08 0A = 02 A4 28 40 A3 DB 70 A7
+000000  01 BB E6 C0 DC DD 45 B0 = 74 09 1B 88 80 19 40 04
+000010  49 D5 00 00 01 01 08 0A = 17 27 B8 DD DD B4 75 34
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  17 03 03 01 CB 87 CC 0E = 8F 38 61 E6 47 A3 FE 05
+000010  A5 4E A3 E8 BE 3E 9E B0 = 17 EE EC 0D DB D5 EA B9
+000020  A1 B5 59 52 1B 9C CB 4A = 05 14 63 34 CF 99 E7 50
+000030  13 18 00 FD 48 7E B9 33 = 81 BB 37 C9 AE E5 09 4E
+000040  05 2E A8 6D D6 9A 8C 99 = 2F BC 59 89 F5 38 D7 F8
+000050  1D 8A 51 56 54 3C B6 58 = 4D 53 9D F7 6A C7 D4 CE
+000060  DB 48 B2 9C 6B 52 83 31 = 74 4E A5 B6 DD 17 B2 E7
+000070  D2 2C 54 47 54 9B FF F9 = AB 73 C8 45 0D 3D 9C BC
+000080  5B 77 19 E1 63 83 67 85 = E2 A7 F4 18 B2 28 40 0A
+000090  DA 0D D1 B7 57 76 A6 C8 = 3F 05 24 54 92 3F 08 0F
+0000A0  17 71 AD A2 F8 05 B2 71 = 1F CF 5D B3 54 64 96 5B
+0000B0  D1 0A B0 90 50 71 2D 4F = 8B 98 2B 1A 0C 1F 73 C9
+0000C0  4B 11 6B E8 C7 06 4B A2 = 2C 10 D5 9F 25 95 52 51
+0000D0  11 A6 A8 AA DA DF 0B EB = 97 48 6B 0D C1 5F C1 61
+0000E0  17 4F 93 95 65 D4 18 A1 = F3 67 F1 31 17 0C 8C 0E
+0000F0  D1 20 9C 9F 47 4F 51 CF = EC CB 47 85 D7 D5 65 FB
+000100  E7 48 BB 57 FD 7B C3 2E = 5B ED A4 0A 00 BE 8D B5
+000110  F8 B0 A9 D5 8F 70 0A C6 = C4 88 06 5A AD 7B 50 8F
+000120  A3 7D E1 5F B2 CB 1C 64 = B3 3B CA 3D 9D EE 98 46
+000130  5C 1D 6D B6 F9 71 BE 30 = 1A A2 58 D9 0C 33 42 2C
+000140  72 F5 E3 8B 92 78 63 76 = 8A 20 B4 2E 0A 47 D8 1E
+000150  E2 2C 0E 71 4D 33 8F 59 = 55 B4 85 74 0F 0C 1D 31
+000160  93 06 48 76 F3 E8 48 2C = D7 ED E0 C0 7A 90 3B 98
+000170  DB 74 07 0A C5 35 B7 3B = 9D F2 6F A2 D0 87 05 5D
+000180  0C 57 BF 7B AA E0 2F 86 = 73 31 13 71 B0 90 9B B2
+000190  02 03 8D D3 5A 04 1C F3 = FB BC D2 28 97 D5 03 A4
+0001A0  6E C9 A9 8E 3A 63 66 79 = B2 FE FF 46 85 BE 4D 4A
+0001B0  CB B0 D5 B8 2D D6 B8 AD = F4 A3 47 DF 83 BD 43 30
+0001C0  41 BD 53 05 27 ED 65 CC = 31 2B 75 28 02 5C E0 93
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 7 *************************
 
 IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
+     Source IP         : 20.189.173.7
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 820  Bytes(Size of Packet)
+     IP Total Length   : 52  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7031
-     TTL               : 121
-     Checksum          : 3574
+     Type Of Service   : 0
+     Identification    : 25814
+     TTL               : 105
+     Checksum          : 10775
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141370726
-     Acknowledge Number   : 1240307828
+     Destination Port     : 59072
+     Sequence Number      : 3705489281
+     Acknowledge Number   : 1946753953
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
      Reset Flag           : 0
-     Push Flag            : 1
+     Push Flag            : 0
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 15907
+     Window               : 16388
+     Checksum             : 62058
      Urgent Pointer       : 0
 
-********* SSL RECORD LAYER **********
-     Record Type: Handshake
-     Version: TLS 1.3
-     Length: 32770
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 03 34 1B 77 00 00 = 79 06 0D F6 AC D9 A6 ED
-000010  C0 A8 00 68
+000000  45 00 00 34 64 D6 40 00 = 69 06 2A 17 14 BD AD 07
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 4D 66 = 49 ED 98 74 80 18 01 0B
-000010  3E 23 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
+000000  01 BB E6 C0 DC DD 47 81 = 74 09 1B A1 80 10 40 04
+000010  F2 6A 00 00 01 01 08 0A = 17 27 B9 CE DD B4 76 47
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  16 03 03 00 80 02 00 00 = 7C 03 03 C3 C3 2A 7B 73
-000010  30 E6 92 1C A0 44 4B C4 = 06 37 70 2E A8 E2 B5 C0
-000020  B4 A6 5B EB DD EF 3E BF = A7 98 36 20 C1 22 93 16
-000030  16 76 C9 30 B7 10 66 46 = FD FF C0 6D 83 D2 D3 C6
-000040  35 9E 31 1F 67 EE 4A 0E = B5 50 78 6D 13 01 00 00
-000050  34 00 29 00 02 00 00 00 = 33 00 24 00 1D 00 20 D1
-000060  D1 EC 94 A4 8C 03 27 C2 = 83 99 AA 6B 0F EC 62 0C
-000070  A6 F4 82 9A B4 E9 7D B5 = C3 EA 2C EF 27 C1 77 00
-000080  2B 00 02 03 04 14 03 03 = 00 01 01 17 03 03 00 48
-000090  4E 1D 85 A8 0A A8 A1 72 = AD 3C 90 09 CA 75 16 45
-0000A0  D3 16 63 11 3E 01 37 CF = 45 C2 5D 71 AA 9E CA 24
-0000B0  02 37 D0 F5 99 BD 6E 9F = 2D DE 28 B1 46 B9 95 14
-0000C0  F2 2F 94 24 7E F6 6C 18 = B9 AA 6F 6B D0 A1 38 F4
-0000D0  1D A3 05 09 E6 BA BC 6B = 17 03 03 02 23 6D F3 A5
-0000E0  8C 80 B5 52 54 02 0C E4 = 82 7E E1 94 10 B5 20 D3
-0000F0  E2 AA 10 CB 57 93 82 4C = 55 07 B0 F1 00 72 23 9F
-000100  C9 FD 4A 39 D3 28 A3 70 = 26 C2 8D F2 2E 35 FE F9
-000110  FF A2 6E D0 6D EC 07 D6 = 7B 97 98 9F E8 A5 E5 13
-000120  BD 8B 22 E8 2E 85 5C 3A = FD BA 89 60 ED 71 E1 BB
-000130  29 65 1A 03 5E 2F AB 73 = 33 65 5A 87 D8 A9 50 9A
-000140  34 0B 9C F8 A4 F3 5E 38 = 6D 72 08 E4 50 89 88 B3
-000150  D7 87 43 7B B5 49 3E 57 = 82 5A BF FC 07 26 F6 22
-000160  9E 7A 12 58 B7 48 FF F2 = DB 68 36 48 37 3E E2 2E
-000170  BD 6C 61 9C 17 F7 DB D7 = 51 D2 90 CF C4 C4 04 0E
-000180  30 09 0A 6E 5F 1F B8 E5 = 77 ED 96 1A 0A 5A 34 92
-000190  33 37 2A 1C 1B 05 38 CD = 62 FD D4 8B C1 3E AD 2E
-0001A0  9A D7 D2 B9 63 50 09 D7 = 93 9B 44 BC C3 26 FD BB
-0001B0  F8 D8 06 88 54 69 F7 FF = 39 14 9A E8 FC A1 C7 11
-0001C0  1B DA E2 A5 D1 8A D9 DD = D8 A9 D6 F3 3E 46 1B E2
-0001D0  97 CB 70 FA 7A 14 6E C1 = 7E 21 30 F7 C9 CB 5C 13
-0001E0  BA 4B 22 88 A3 CA 40 3F = 38 1A EB B1 0B 70 D0 6F
-0001F0  CC E6 8B CA BE 8A 88 1D = 9A 3A 38 16 CE CC 42 1D
-000200  83 9F 76 5D 86 A8 CE 25 = D3 38 EC FA BD D5 27 F6
-000210  EB D1 ED A6 2A C8 45 68 = 16 3E 7D 68 C5 92 BA 1A
-000220  E6 ED DC D1 56 D3 1E D6 = 5B 6A A5 BB D8 8C F4 9E
-000230  74 F4 00 78 9D 71 18 BF = 60 8D CF CD C9 2D FC 02
-000240  ED 09 53 00 57 F4 1E AC = DD C0 93 6A 7E A7 47 67
-000250  3A AC A8 B7 F4 45 B2 14 = CE 9C CF 15 2D 44 0D 6C
-000260  02 DD 46 C1 73 A9 51 98 = 74 74 38 F2 52 5C 94 8E
-000270  65 41 CC 43 A5 DE 54 38 = AA 16 91 CA A5 14 5A 03
-000280  78 61 5C 75 4C 02 7B 42 = BB 5E 7F 97 18 EF 5E 2A
-000290  86 CE 12 C9 18 50 F7 A8 = 38 B8 4B C1 7F 32 01 33
-0002A0  3F AD 96 45 ED 7B BF 21 = 70 60 2F 62 31 D1 B1 92
-0002B0  9F 40 F5 46 FC B3 94 5E = 7F 80 CF CB 4F C8 1F 64
-0002C0  A2 C4 8C 3D 70 0F 7D 09 = A8 E9 F9 D0 20 B2 D0 F2
-0002D0  1F 1E 2B 0F F1 22 67 EB = 85 6B 07 5E 2A 7D 36 4E
-0002E0  6C ED 71 26 98 65 DC FD = D6 12 04 EC 3C 72 C2 0A
-0002F0  4C A1 E6 61 A4 D3 CA 25 = A2 B8 BB 8C A5 DB B0 5A
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 8 *************************
 
 IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 114  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7032
-     TTL               : 121
-     Checksum          : 4279
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141371494
-     Acknowledge Number   : 1240307828
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 6457
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 14754
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 72 1B 78 00 00 = 79 06 10 B7 AC D9 A6 ED
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 50 66 = 49 ED 98 74 80 18 01 0B
-000010  19 39 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 39 A2 EF 96 = 48 A5 FD FD FE F5 74 8E
-000010  6B D5 14 7D 9A FB A3 B4 = 9E 8D A4 DB 7F 2D B3 DC
-000020  6A 7C 1F 30 84 C3 A3 AC = A6 2A 85 B7 6A 46 4C 08
-000030  BE EB BF 0F 4D B5 C8 51 = 82 04 C5 73 7D 16
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 9 *************************
-
-IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 83  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7033
-     TTL               : 121
-     Checksum          : 4309
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141371556
-     Acknowledge Number   : 1240307828
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 27691
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 6709
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 53 1B 79 00 00 = 79 06 10 D5 AC D9 A6 ED
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 50 A4 = 49 ED 98 74 80 18 01 0B
-000010  6C 2B 00 00 01 01 08 0A = 02 A4 28 87 A3 DB 70 A7
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 1A 35 C3 48 = C6 27 E3 C1 EB 8E 7F E6
-000010  51 2C D1 5A 55 AB F1 A3 = 24 B1 AC 9B 32 A4 52
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 10 *************************
-
-IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7034
-     TTL               : 121
-     Checksum          : 4339
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141371587
-     Acknowledge Number   : 1240307912
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 14293
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 34 1B 7A 00 00 = 79 06 10 F3 AC D9 A6 ED
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 50 C3 = 49 ED 98 C8 80 10 01 0B
-000010  37 D5 00 00 01 01 08 0A = 02 A4 28 BC A3 DB 71 24
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 11 *************************
-
-IP Header
-     Source IP         : 172.217.166.237
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 128
-     Identification    : 7035
-     TTL               : 121
-     Checksum          : 4338
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 48280
-     Sequence Number      : 4141371587
-     Acknowledge Number   : 1240307943
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 14260
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 80 00 34 1B 7B 00 00 = 79 06 10 F2 AC D9 A6 ED
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB BC 98 F6 D8 50 C3 = 49 ED 98 E7 80 10 01 0B
-000010  37 B4 00 00 01 01 08 0A = 02 A4 28 BD A3 DB 71 25
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 12 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
      IP Total Length   : 60  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 96
+     Type Of Service   : 0
      Identification    : 0
-     TTL               : 121
-     Checksum          : 12263
+     TTL               : 56
+     Checksum          : 33260
 
 TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599541960
-     Acknowledge Number   : 1987477189
+     Source Port          : 80
+     Destination Port     : 35774
+     Sequence Number      : 4193865746
+     Acknowledge Number   : 3143899557
      Header Length        : 40 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 1
@@ -593,20 +684,220 @@ TCP Header
      Acknowledgement Flag : 1
      Urgent Flag          : 0
      Window               : 65535
-     Checksum             : 50186
+     Checksum             : 45410
      Urgent Pointer       : 0
 
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 3C 00 00 40 00 = 79 06 2F E7 22 75 ED EF
-000010  C0 A8 00 68
+000000  45 00 00 3C 00 00 40 00 = 38 06 81 EC 22 6B DD 52
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 12 C8 = 76 76 7E C5 A0 12 FF FF
-000010  C4 0A 00 00 02 04 05 84 = 04 02 08 0A 43 60 24 DC
-000020  44 CF FB 1C 01 03 03 08
+000000  00 50 8B BE F9 F9 50 12 = BB 64 19 A5 A0 12 FF FF
+000010  B1 62 00 00 02 04 05 84 = 04 02 08 0A CC 6B BF 9D
+000020  EF BF AE FE 01 03 03 08
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 9 *************************
+
+IP Header
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 350  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 42085
+     TTL               : 56
+     Checksum          : 7269
+
+TCP Header
+     Source Port          : 80
+     Destination Port     : 35774
+     Sequence Number      : 4193865747
+     Acknowledge Number   : 3143899858
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 1
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 261
+     Checksum             : 61099
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 01 5E A4 65 00 00 = 38 06 1C 65 22 6B DD 52
+000010  C0 A8 00 6A
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  00 50 8B BE F9 F9 50 13 = BB 64 1A D2 80 18 01 05
+000010  EE AB 00 00 01 01 08 0A = CC 6B BF CB EF BF AF 2B
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  48 54 54 50 2F 31 2E 31 = 20 32 30 30 20 4F 4B 0D
+000010  0A 53 65 72 76 65 72 3A = 20 6E 67 69 6E 78 0D 0A
+000020  43 6F 6E 74 65 6E 74 2D = 4C 65 6E 67 74 68 3A 20
+000030  39 30 0D 0A 56 69 61 3A = 20 31 2E 31 20 67 6F 6F
+000040  67 6C 65 0D 0A 44 61 74 = 65 3A 20 4D 6F 6E 2C 20
+000050  31 31 20 44 65 63 20 32 = 30 32 33 20 31 37 3A 33
+000060  36 3A 31 39 20 47 4D 54 = 0D 0A 41 67 65 3A 20 34
+000070  35 38 37 37 0D 0A 43 6F = 6E 74 65 6E 74 2D 54 79
+000080  70 65 3A 20 74 65 78 74 = 2F 68 74 6D 6C 0D 0A 43
+000090  61 63 68 65 2D 43 6F 6E = 74 72 6F 6C 3A 20 70 75
+0000A0  62 6C 69 63 2C 6D 75 73 = 74 2D 72 65 76 61 6C 69
+0000B0  64 61 74 65 2C 6D 61 78 = 2D 61 67 65 3D 30 2C 73
+0000C0  2D 6D 61 78 61 67 65 3D = 33 36 30 30 0D 0A 0D 0A
+0000D0  3C 6D 65 74 61 20 68 74 = 74 70 2D 65 71 75 69 76
+0000E0  3D 22 72 65 66 72 65 73 = 68 22 20 63 6F 6E 74 65
+0000F0  6E 74 3D 22 30 3B 75 72 = 6C 3D 68 74 74 70 73 3A
+000100  2F 2F 73 75 70 70 6F 72 = 74 2E 6D 6F 7A 69 6C 6C
+000110  61 2E 6F 72 67 2F 6B 62 = 2F 63 61 70 74 69 76 65
+000120  2D 70 6F 72 74 61 6C 22 = 2F 3E
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 10 *************************
+
+IP Header
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 42084
+     TTL               : 56
+     Checksum          : 7568
+
+TCP Header
+     Source Port          : 80
+     Destination Port     : 35774
+     Sequence Number      : 4193865747
+     Acknowledge Number   : 3143899858
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 261
+     Checksum             : 56691
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 34 A4 64 00 00 = 38 06 1D 90 22 6B DD 52
+000010  C0 A8 00 6A
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  00 50 8B BE F9 F9 50 13 = BB 64 1A D2 80 10 01 05
+000010  DD 73 00 00 01 01 08 0A = CC 6B BF CA EF BF AF 2B
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 11 *************************
+
+IP Header
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 60  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 0
+     TTL               : 56
+     Checksum          : 33260
+
+TCP Header
+     Source Port          : 80
+     Destination Port     : 35788
+     Sequence Number      : 1172914733
+     Acknowledge Number   : 2663231451
+     Header Length        : 40 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 1
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 65535
+     Checksum             : 30936
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 3C 00 00 40 00 = 38 06 81 EC 22 6B DD 52
+000010  C0 A8 00 6A
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  00 50 8B CC 45 E9 42 2D = 9E BD AF DB A0 12 FF FF
+000010  78 D8 00 00 02 04 05 84 = 04 02 08 0A C5 21 45 D4
+000020  EF BF B0 F4 01 03 03 08
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 12 *************************
+
+IP Header
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 50933
+     TTL               : 56
+     Checksum          : 64254
+
+TCP Header
+     Source Port          : 80
+     Destination Port     : 35788
+     Sequence Number      : 1172914734
+     Acknowledge Number   : 2663231754
+     Header Length        : 32 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 0
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 261
+     Checksum             : 42217
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 34 C6 F5 00 00 = 38 06 FA FE 22 6B DD 52
+000010  C0 A8 00 6A
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  00 50 8B CC 45 E9 42 2E = 9E BD B1 0A 80 10 01 05
+000010  A4 E9 00 00 01 01 08 0A = C5 21 46 00 EF BF B1 20
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
 
@@ -615,67 +906,22 @@ TCP Header
 ***********************TCP Packet 13 *************************
 
 IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
+     Source IP         : 34.107.221.82
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 268  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57036
-     TTL               : 121
-     Checksum          : 37154
+     Type Of Service   : 0
+     Identification    : 50934
+     TTL               : 56
+     Checksum          : 64037
 
 TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599541961
-     Acknowledge Number   : 1987477852
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 262
-     Checksum             : 61126
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE CC 00 00 = 79 06 91 22 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 12 C9 = 76 76 81 5C 80 10 01 06
-000010  EE C6 00 00 01 01 08 0A = 43 60 24 FE 44 CF FB 3E
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 14 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 264  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57037
-     TTL               : 121
-     Checksum          : 36941
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599541961
-     Acknowledge Number   : 1987477852
+     Source Port          : 80
+     Destination Port     : 35788
+     Sequence Number      : 1172914734
+     Acknowledge Number   : 2663231754
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
@@ -683,40 +929,82 @@ TCP Header
      Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 262
-     Checksum             : 44928
+     Window               : 261
+     Checksum             : 23991
      Urgent Pointer       : 0
 
-********* SSL RECORD LAYER **********
-     Record Type: Handshake
-     Version: TLS 1.3
-     Length: 32770
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 01 08 DE CD 00 00 = 79 06 90 4D 22 75 ED EF
-000010  C0 A8 00 68
+000000  45 00 01 0C C6 F6 00 00 = 38 06 FA 25 22 6B DD 52
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 12 C9 = 76 76 81 5C 80 18 01 06
-000010  AF 80 00 00 01 01 08 0A = 43 60 25 42 44 CF FB 3E
+000000  00 50 8B CC 45 E9 42 2E = 9E BD B1 0A 80 18 01 05
+000010  5D B7 00 00 01 01 08 0A = C5 21 46 01 EF BF B1 20
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  16 03 03 00 80 02 00 00 = 7C 03 03 28 E6 45 33 85
-000010  83 FE 60 43 B0 8A A0 F6 = E7 AB DE F1 48 28 D3 81
-000020  A0 AC E4 64 A4 C5 AA 7E = 29 24 38 20 ED 66 52 BD
-000030  EE 1C FF E1 CE 85 98 88 = CE CE CE BC E8 A0 D7 AC
-000040  B4 94 42 27 00 45 39 26 = 81 1E B3 85 13 01 00 00
-000050  34 00 29 00 02 00 00 00 = 33 00 24 00 1D 00 20 51
-000060  33 45 2B 60 B3 8F A8 9A = 28 E6 DA C0 A0 3E 92 CA
-000070  B0 7C 18 EA 6A 27 A8 90 = B7 19 06 92 28 C0 39 00
-000080  2B 00 02 03 04 14 03 03 = 00 01 01 17 03 03 00 44
-000090  BC DA EA 6B CD F6 C3 DA = 79 F7 3A 26 7A D5 02 80
-0000A0  AC 19 03 4B B5 FE 76 DE = 91 71 3A 8F 65 26 1A 36
-0000B0  52 9E 8B 23 78 08 A9 C6 = 57 7D D8 70 AD E5 8D B9
-0000C0  1C 68 C1 93 F4 83 F2 E4 = 00 D6 45 D4 B9 5D 23 C8
-0000D0  59 AF FA A9
+000000  48 54 54 50 2F 31 2E 31 = 20 32 30 30 20 4F 4B 0D
+000010  0A 53 65 72 76 65 72 3A = 20 6E 67 69 6E 78 0D 0A
+000020  43 6F 6E 74 65 6E 74 2D = 4C 65 6E 67 74 68 3A 20
+000030  38 0D 0A 56 69 61 3A 20 = 31 2E 31 20 67 6F 6F 67
+000040  6C 65 0D 0A 44 61 74 65 = 3A 20 4D 6F 6E 2C 20 31
+000050  31 20 44 65 63 20 32 30 = 32 33 20 30 39 3A 31 32
+000060  3A 30 33 20 47 4D 54 0D = 0A 41 67 65 3A 20 37 36
+000070  31 33 34 0D 0A 43 6F 6E = 74 65 6E 74 2D 54 79 70
+000080  65 3A 20 74 65 78 74 2F = 70 6C 61 69 6E 0D 0A 43
+000090  61 63 68 65 2D 43 6F 6E = 74 72 6F 6C 3A 20 70 75
+0000A0  62 6C 69 63 2C 6D 75 73 = 74 2D 72 65 76 61 6C 69
+0000B0  64 61 74 65 2C 6D 61 78 = 2D 61 67 65 3D 30 2C 73
+0000C0  2D 6D 61 78 61 67 65 3D = 33 36 30 30 0D 0A 0D 0A
+0000D0  73 75 63 63 65 73 73 0A
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+***********************TCP Packet 14 *************************
+
+IP Header
+     Source IP         : 34.117.237.239
+     Destination IP    : 192.168.0.106
+     IP Version        : 4
+     Protocol          : 6
+     IP Total Length   : 60  Bytes(Size of Packet)
+     IP Header Length  : 20 Bytes
+     Type Of Service   : 0
+     Identification    : 0
+     TTL               : 56
+     Checksum          : 28997
+
+TCP Header
+     Source Port          : 443
+     Destination Port     : 51936
+     Sequence Number      : 2521412934
+     Acknowledge Number   : 520599566
+     Header Length        : 40 BYTES
+     Finish Flag          : 0
+     Synchronise Flag     : 1
+     Reset Flag           : 0
+     Push Flag            : 0
+     Acknowledgement Flag : 1
+     Urgent Flag          : 0
+     Window               : 65535
+     Checksum             : 23504
+     Urgent Pointer       : 0
+
+
+                         HEX DATA                         
+
+*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
+000000  45 00 00 3C 00 00 40 00 = 38 06 71 45 22 75 ED EF
+000010  C0 A8 00 6A
+
+*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
+000000  01 BB CA E0 96 49 B5 46 = 1F 07 B8 0E A0 12 FF FF
+000010  5B D0 00 00 02 04 05 84 = 04 02 08 0A 59 72 98 AA
+000020  89 B1 AF C7 01 03 03 08
+
+*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
@@ -724,21 +1012,21 @@ TCP Header
 
 IP Header
      Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
      IP Total Length   : 52  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57038
-     TTL               : 121
-     Checksum          : 37152
+     Type Of Service   : 0
+     Identification    : 32004
+     TTL               : 56
+     Checksum          : 13385
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542173
-     Acknowledge Number   : 1987477916
+     Destination Port     : 51936
+     Sequence Number      : 2521412935
+     Acknowledge Number   : 520600242
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
@@ -747,19 +1035,19 @@ TCP Header
      Acknowledgement Flag : 1
      Urgent Flag          : 0
      Window               : 262
-     Checksum             : 60649
+     Checksum             : 34423
      Urgent Pointer       : 0
 
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE CE 00 00 = 79 06 91 20 22 75 ED EF
-000010  C0 A8 00 68
+000000  45 00 00 34 7D 04 00 00 = 38 06 34 49 22 75 ED EF
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 13 9D = 76 76 81 9C 80 10 01 06
-000010  EC E9 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+000000  01 BB CA E0 96 49 B5 47 = 1F 07 BA B2 80 10 01 06
+000010  86 77 00 00 01 01 08 0A = 59 72 98 D0 89 B1 AF ED
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
 
@@ -769,44 +1057,223 @@ TCP Header
 
 IP Header
      Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
+     IP Total Length   : 2852  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57039
-     TTL               : 121
-     Checksum          : 37151
+     Type Of Service   : 0
+     Identification    : 32005
+     TTL               : 56
+     Checksum          : 10584
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542173
-     Acknowledge Number   : 1987478086
+     Destination Port     : 51936
+     Sequence Number      : 2521412935
+     Acknowledge Number   : 520600242
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
      Reset Flag           : 0
-     Push Flag            : 0
+     Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 60474
+     Window               : 262
+     Checksum             : 56461
      Urgent Pointer       : 0
 
+********* SSL RECORD LAYER **********
+     Record Type: Handshake
+     Version: TLS 1.3
+     Length: 31234
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE CF 00 00 = 79 06 91 1F 22 75 ED EF
-000010  C0 A8 00 68
+000000  45 00 0B 24 7D 05 00 00 = 38 06 29 58 22 75 ED EF
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 13 9D = 76 76 82 46 80 10 01 0B
-000010  EC 3A 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+000000  01 BB CA E0 96 49 B5 47 = 1F 07 BA B2 80 18 01 06
+000010  DC 8D 00 00 01 01 08 0A = 59 72 98 D2 89 B1 AF ED
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
+000000  16 03 03 00 7A 02 00 00 = 76 03 03 D5 FE 71 55 CA
+000010  02 4C A4 08 09 A1 34 D5 = 67 E7 C2 C9 40 8C A0 A7
+000020  18 CC 53 F9 07 04 77 96 = E2 85 9A 20 03 C6 68 DA
+000030  9E 47 AD EC DA 74 5C F7 = 71 28 82 B1 B1 F8 A2 AD
+000040  80 B4 FE E2 88 3D 6C B6 = A3 64 96 3E 13 01 00 00
+000050  2E 00 33 00 24 00 1D 00 = 20 15 31 98 7A 20 84 E8
+000060  EC 44 AF 6F B5 6A 69 DE = 29 75 DD C2 F6 F2 FB FA
+000070  F9 CB 86 10 9C 1F B3 F2 = 38 00 2B 00 02 03 04 14
+000080  03 03 00 01 01 17 03 03 = 11 1B F0 50 14 2C 60 1D
+000090  6B 19 0B 2B 00 D7 4E C6 = 03 C7 0D 8A BA 72 DD C0
+0000A0  F6 67 D6 A9 8C 9A 84 12 = 60 70 1F E6 F1 4D 38 34
+0000B0  4E AA F8 BC 05 CD 5C 0A = AA 07 AC 68 85 26 C9 46
+0000C0  C7 12 09 55 22 30 C8 B1 = BD A9 2C 1D 00 76 BA 2E
+0000D0  6A 11 D9 50 0E 1B C4 74 = 75 D3 0C B7 50 25 9B 5F
+0000E0  DA E6 0F 24 36 4A 4B 22 = E4 74 3E 56 CB 8F 8F 0B
+0000F0  61 4E 4A 6A E4 C8 1A C6 = 6B 74 B5 D6 94 3C 49 4A
+000100  39 9A 71 EC 0F 44 67 A9 = 36 64 FC 12 79 B1 DE 0F
+000110  01 9A 93 24 03 A0 E6 1E = D5 61 0D 54 D1 3D 30 61
+000120  8C C7 EB CD 48 DA 7C 9D = A4 5E DC 7F 1E 6C FA 67
+000130  9B 76 C3 B4 62 08 E4 51 = A0 36 5D 7B 58 AE 28 8C
+000140  10 2D C0 C4 C2 F0 14 B6 = E0 F7 E5 97 CE B9 E8 1C
+000150  09 41 C0 A4 AD F9 D9 37 = E7 B4 ED 21 AD 3E 27 CC
+000160  53 7D 61 61 76 20 CC DC = 96 8F ED B8 97 75 1C EF
+000170  11 E8 0A 77 B1 E0 6E 2D = CF 6D 76 FF 6E F4 A2 3B
+000180  39 11 62 64 03 66 F7 48 = D1 FB 45 50 BD 92 71 15
+000190  10 D5 02 C3 60 DF 88 BB = 6F 31 1A EB 32 9E E4 7C
+0001A0  16 ED 36 04 01 17 E3 85 = 38 E8 9F D9 72 E0 66 43
+0001B0  C6 11 8C 07 58 26 CE 5A = 2E 7B 96 88 C7 D3 BA 37
+0001C0  4D A2 2E 74 F5 DD 93 D8 = 41 5F 26 4A 3B 54 87 8E
+0001D0  85 DB D6 26 C8 EF 1E F4 = 97 17 8A 38 98 3F 92 D2
+0001E0  67 8E B0 6E 5F 38 01 EF = 74 10 EE B4 1D 40 8D E9
+0001F0  9B 71 19 3E AC 1F A4 61 = 2E 9E 0B B2 99 38 67 FF
+000200  B7 D0 44 1C 9C A4 D1 20 = B0 36 83 63 B3 61 23 53
+000210  9E 98 84 1A 97 BC 5A DA = 37 82 27 A6 D2 22 29 1B
+000220  E7 F1 19 D4 DB CF 55 36 = 6B 8B 97 9B E3 B7 A8 B3
+000230  D4 54 BC 8E 3D 37 91 49 = 60 D5 A0 2A 51 2C 32 7E
+000240  0E B0 19 18 74 2B 33 5A = 4D DC 33 76 AE E1 F4 7C
+000250  B5 8C 43 BE 04 4F 27 A4 = 5D D4 58 E7 DE 78 15 AF
+000260  35 2F 96 B7 CE EF B3 01 = 93 CC EF B6 64 34 A0 34
+000270  13 C4 FA 2F 60 99 5E E0 = 28 90 B5 90 00 D1 15 82
+000280  58 86 59 1E 9E CB 9D B6 = 56 8D 7C 8A 9F 84 0D D1
+000290  16 64 70 D8 55 0E 69 A8 = AB CF 89 12 49 DC A8 2E
+0002A0  88 59 0B 9D 44 04 CE 3D = 81 BB CC 85 91 10 7D D4
+0002B0  44 AE 4B AD 00 8A CC 32 = B9 B3 27 4F AA DB 32 9C
+0002C0  4A AE 20 9B 06 4A 7C 61 = 4D 7D 0E 3E 0F 55 72 C2
+0002D0  0C 70 9E 7C F3 7B E5 FD = F1 05 C1 1D F1 1C 25 9F
+0002E0  87 54 30 50 96 C4 86 81 = 0C B4 87 6A 53 CC 90 02
+0002F0  56 9F D9 AA AF 1F 35 50 = DD 07 1D 14 21 DA 44 37
+000300  36 56 02 3A AD 6F 87 F1 = F3 04 67 97 5F 63 DE D0
+000310  D8 D6 1E 22 D0 DE 01 C4 = 72 40 D6 2C 29 51 D8 9D
+000320  96 71 D1 5C 2A DA 4A EF = 96 0A 65 A5 2B 76 56 59
+000330  64 E3 11 4C DD 7D D9 2E = 64 38 9A 0C D8 46 81 BD
+000340  BB 75 8D D5 B2 13 9F 69 = 6F 6E B6 23 18 08 BB 74
+000350  B7 64 71 8C 01 64 E6 C2 = 68 7C D6 B2 EB 20 17 56
+000360  AA 7E A8 5F 56 84 67 63 = 2D 4E 0E B3 26 98 25 3B
+000370  F2 A6 09 53 FF 47 37 50 = 95 97 9D 2D E3 81 C5 8E
+000380  B7 B0 54 3A 89 B8 FA 7B = A0 57 66 E4 5B F7 78 0C
+000390  63 D4 2A C1 14 ED 11 EC = 89 BC 9E 76 A2 3E 35 83
+0003A0  F9 58 56 79 78 E2 46 7A = 8B 45 1A B5 51 9D 9D 3D
+0003B0  95 B8 47 6C EA 44 BF 93 = 09 9A 16 74 48 BA 1B 23
+0003C0  6D 74 39 3D 27 27 1C CC = 13 42 6F E4 75 65 FB EE
+0003D0  FA A4 41 50 60 3E D5 A6 = 71 DA AC E0 83 96 43 65
+0003E0  82 A2 D8 32 C5 93 86 EA = A9 73 9B 14 E6 50 27 66
+0003F0  57 BA FC 3D 3F 9B 50 83 = 97 14 93 AC ED 99 A2 9A
+000400  EC 97 26 4D 44 59 C7 6E = F0 C9 8E 16 11 51 33 4D
+000410  3A 81 EF 60 2F 78 41 94 = 07 6D B6 2E 1C 6B 7A AE
+000420  22 DB 58 B5 97 07 EE 7C = 2D 6B 35 45 D9 EB 42 69
+000430  B0 1E 66 D3 45 70 99 A1 = 81 CB B1 06 4C 4A F6 B4
+000440  7A CD E3 F9 06 ED 26 DE = D1 F7 19 56 9A D1 CD E3
+000450  91 AE E9 B9 E7 67 F1 0E = 3A B1 60 2A 1A 26 80 1D
+000460  EC 3C BB 98 C1 CF 73 F3 = F3 7C 7E 3F 1F 59 AE 55
+000470  91 61 88 4A 93 5C 8C 42 = EF 76 4C 54 76 73 9F 74
+000480  66 EB 27 6D 5F 9E 25 05 = DC 4F 35 39 07 B9 ED A5
+000490  D3 CA DE B0 44 B0 BF 13 = B9 83 42 53 E9 E1 26 E8
+0004A0  BF C5 19 E0 D0 24 C7 0A = FB AC 1D E4 3F F8 5E F0
+0004B0  7F F3 A0 54 29 D5 67 E9 = 40 0D D3 3D D7 33 F4 31
+0004C0  E8 33 AF BD 4E 75 22 90 = B2 A1 E3 FF C1 93 36 E7
+0004D0  BA F6 CB A0 8F 2A 2A EC = FB EF 6D FD D5 32 70 CD
+0004E0  43 39 8E 2C B9 07 67 70 = EE 97 63 19 7D 2A 73 ED
+0004F0  76 21 C4 EC FE 7C 73 04 = C3 10 37 0E 9D 3E 11 EB
+000500  52 4C 8C 74 BF 93 C8 3D = 4E AE F5 3E 7E 39 E6 A0
+000510  46 50 96 B1 65 6F BB 77 = 01 93 D7 9D AC 1C 6A C4
+000520  DA E1 77 D5 38 8A DD 0E = C6 C0 B6 FA 5A 6F DC A5
+000530  0A 07 E6 4D 16 D2 69 FA = EC 60 2E 94 52 72 7A FB
+000540  FA 66 84 D2 68 53 F6 4A = B8 8C E2 AC 68 5A 51 C1
+000550  77 A6 5D 31 8A BB 5C D7 = 64 04 FF AA EF A9 91 06
+000560  0E 8B 60 22 5E BD 8F 49 = 08 A3 0E 1B 97 0F D6 5D
+000570  A1 BE 39 C8 03 91 87 87 = A7 73 5B 61 AE 51 9C C2
+000580  6A C3 75 E2 EC 37 8E EE = 0A 2E A4 30 0A F8 D6 CF
+000590  AF 0C 2D 92 05 EE EE FB = B0 1A 6C E5 A0 97 B2 B3
+0005A0  1F 5F 11 A6 7C 5C AC 60 = 27 2A 34 23 FE 45 F2 5E
+0005B0  A7 07 3A 01 52 60 9C FF = BF A4 0D 65 5F 32 B5 B6
+0005C0  6C EF BB 11 4C C6 7A 42 = B6 6B 24 C0 15 3A A5 C8
+0005D0  B9 E9 A1 64 39 27 12 0D = A3 12 E8 34 67 20 43 36
+0005E0  0B 22 37 5E 69 39 02 9D = 7C BE FE 5C 53 C8 38 00
+0005F0  5B B6 1C 48 12 DB C6 57 = 62 27 AC 69 42 FF C2 FE
+000600  A4 53 0A 9F 28 9C A6 AD = D7 BB B1 D4 EA 8A 7C 4F
+000610  0D 4D EF DD 50 A3 D1 01 = 3D EF 8F 2B B2 E0 1C 78
+000620  54 51 3B 13 64 C7 24 11 = 1A 52 AB 38 99 A1 9C E2
+000630  9D EE 88 F2 3D 05 D2 F5 = 1B BF 9A 29 28 52 AA AC
+000640  A3 56 0A 71 E8 2E 6A 87 = 7B AB 84 9C 6D 3C 27 4C
+000650  43 87 AC BD 9F BF 15 21 = B2 AC 60 36 EA D0 26 86
+000660  7A 48 2D 5C C5 42 90 C9 = 25 3C 60 88 FF 4B EC DB
+000670  74 A7 7E CD E5 3A FA 53 = CB 18 53 2D F8 FA 4E 3E
+000680  71 A4 74 AF 80 68 69 F4 = E5 6E 85 67 C6 9D B3 B8
+000690  26 37 BC 43 D9 C3 3A 07 = 90 70 72 23 56 AF 18 30
+0006A0  FE 48 33 A3 E1 82 51 8B = 53 38 6A 9F 6F 86 12 C7
+0006B0  23 CC 27 09 54 EC FB 38 = DF 83 3F 62 9A 63 84 DC
+0006C0  0B 75 A0 C7 45 3A 1C FA = 32 B3 6F 97 A7 FA 12 CA
+0006D0  0F AC 7F 23 83 FC 04 94 = F3 F2 66 40 DC 78 DD D3
+0006E0  33 61 10 68 60 89 2A 50 = 57 56 66 A7 B1 54 53 C2
+0006F0  C9 DD 86 90 5B A4 64 AF = 5B 81 7E 6B 80 D1 AE 49
+000700  32 95 9A 24 18 F7 2E 21 = 40 1E AA 9D EE 4C 91 A5
+000710  D5 E5 B0 A4 C9 4C 55 6A = 5D AE 11 18 E5 F1 8E DD
+000720  18 23 BA DE 02 F9 40 1D = 31 23 84 C4 8C 24 E5 41
+000730  34 99 32 DD 4A 27 03 BA = FA 08 A3 37 1D A2 F1 30
+000740  F6 5D 2E 0C 9D 10 10 8D = 82 01 E8 91 A5 80 88 06
+000750  31 36 87 EA E7 CB B0 FF = DF 7A D0 91 70 62 30 A7
+000760  B2 4D 37 A7 02 FD B7 6B = E0 5E C1 2C 29 1F 76 75
+000770  0F 7E EB 74 54 20 A1 B5 = 1E F0 58 B1 3E 4A B5 F6
+000780  27 E3 35 A4 31 BB A2 29 = 74 C4 7A F8 42 D8 79 0E
+000790  B6 DB A2 90 7C 7A 73 D2 = C3 50 C9 38 C3 B3 AB 29
+0007A0  4F DD E6 F4 82 19 C6 A2 = 0B C3 EB 16 A4 4E 7B 16
+0007B0  51 AE 49 0E E4 C6 63 A7 = 94 E8 81 1C 25 DF 3C 20
+0007C0  42 68 C5 B2 15 45 92 89 = C0 14 1F 98 2A 44 1E BB
+0007D0  E8 E9 2D 31 D9 4B C8 2F = 18 38 AF CA 73 A3 B7 98
+0007E0  9B CB BC 68 4F E9 65 A0 = 4C B0 C9 60 47 45 FA 59
+0007F0  A3 23 B1 9D 9C 03 09 A8 = A8 5B 2D 1E 47 F0 5D 82
+000800  8E 38 6C E3 D9 89 F8 3B = 3C B7 DC F8 A8 19 24 CF
+000810  2D 8F 30 57 2A C5 3D 1E = CA C4 EB 6D D5 BE 3C F8
+000820  60 5A 9E 2D B9 DF 6D 81 = C6 85 7E 0B 78 8C 15 15
+000830  31 7F 04 F2 7E 48 95 52 = 9D 01 82 64 4E 5E C4 3E
+000840  8A 71 C5 E7 63 5B 71 FF = CE A4 B9 BA A6 BD B0 AA
+000850  F9 BA 14 6F 50 64 D1 6C = 26 5D 8F D1 5B 22 71 FF
+000860  B8 7C 21 E7 0D B9 E5 40 = F0 93 E2 E2 B0 A3 F7 63
+000870  5D 42 68 D2 C2 E4 6D AB = 52 B3 F0 B8 51 0A 68 DA
+000880  F9 53 DD 8C 70 FF 4C 91 = 1C 28 A7 9D CF BE BE 5E
+000890  92 20 DA 90 FE 6D A9 9E = 4D 97 E6 92 66 62 85 16
+0008A0  64 D0 60 BF EF 2F A5 70 = 7C 1C D3 D0 69 6F 0A C6
+0008B0  69 96 99 1C 29 F2 4A 26 = 0C 81 64 D5 AE D2 34 08
+0008C0  A5 AB 8B 3B E1 D5 06 B5 = D3 7F 18 34 5C EB F4 1C
+0008D0  43 07 27 6D 62 A7 D0 A2 = B3 6D E6 45 0A C7 C5 84
+0008E0  A3 E4 9F 17 30 27 8E F0 = 79 3E 63 9C D0 A7 6E E7
+0008F0  8A 35 D1 EB DA F0 1B B4 = 38 D3 B4 EA 9A ED 45 73
+000900  9C 7A 60 85 94 BB E4 AD = DE B7 5F 8B 45 93 74 39
+000910  7F 09 A2 0F B3 61 59 B2 = AB 4B 1A BD 9D D1 9B 57
+000920  01 B2 F3 86 26 CC BF 29 = 9B 6B 20 33 E2 8C 0A 81
+000930  04 00 BF AF 84 79 14 C1 = 87 5F FB 29 02 01 48 F4
+000940  39 CC D3 41 6B 82 B4 D6 = 48 C7 E5 0B C7 3E 14 0B
+000950  9E 69 4B 68 06 2E D4 E1 = 5E EA 2A CF EC 92 FE A7
+000960  B2 2C 74 99 56 08 41 09 = 56 04 89 50 90 8D 5C 69
+000970  63 C9 26 AE EB AB E9 5C = DB B6 87 C3 4C D5 EC 97
+000980  39 4E 03 62 A5 87 D8 24 = 21 5C 34 C8 6B 3F D7 7D
+000990  BA 2F 4A 03 84 08 C4 AC = 65 81 F2 AB 87 EA E4 16
+0009A0  B3 27 18 EE 5B B0 0D E4 = 5E 71 64 F9 6D D6 A9 C1
+0009B0  02 4F E4 E3 0B 34 B1 C0 = 68 25 B7 63 2E 1F C8 F1
+0009C0  ED 3C BD 2F 36 46 9B 23 = A9 36 D8 34 96 0E C9 95
+0009D0  F7 FB B3 2B 77 2C 57 81 = 72 B9 FA 27 91 E2 11 04
+0009E0  69 1B 0F D6 52 AC DC 50 = BF 27 BD 98 58 B3 0E 8E
+0009F0  2C CF F6 99 AA 36 17 65 = CC 30 16 50 B0 D2 F8 70
+000A00  1A C7 DA 54 13 31 9E 59 = E7 40 C6 CB A4 71 96 13
+000A10  43 A3 48 8B 43 5A 79 CA = AC B4 5B 18 37 73 0E 89
+000A20  F7 D0 71 A4 3B 11 F1 33 = 47 68 D7 74 2C FB 98 2B
+000A30  A0 63 5C DE A8 7D BB EF = A1 11 D0 52 8E 74 14 24
+000A40  6C 47 60 09 F5 F1 7D E2 = 8E 6F AF F3 CD BA 9D E8
+000A50  C2 79 BF 25 A8 25 B7 AB = 86 F4 02 5A 34 29 60 8D
+000A60  E5 08 C6 55 B2 AD 34 F5 = FD 6B AA 84 EA D8 96 EA
+000A70  5A 29 43 35 92 B0 83 AD = 77 FB 45 E3 25 41 46 B7
+000A80  55 84 0D 79 89 AA 41 C7 = FE 47 FD D4 DF 7D 25 02
+000A90  24 9A 93 6A C7 93 9E 49 = 46 0A C6 C4 F0 F0 27 24
+000AA0  5D 88 F8 6D F0 64 C2 13 = 41 E6 EF 24 AF B0 F4 A0
+000AB0  4C 35 78 02 23 10 C8 EC = 0D 45 52 A1 8A BD 42 B7
+000AC0  E8 DB 2B 1A C9 A5 0D EE = D5 25 AF 5A 60 41 93 E9
+000AD0  6C C9 C9 FB 32 0E 67 70 = 72 14 D9 11 87 D7 FE 22
+000AE0  9E 1B A9 7B 49 17 C3 50 = EA FC A6 15 ED AA C2 8A
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
@@ -814,21 +1281,21 @@ TCP Header
 
 IP Header
      Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
+     Destination IP    : 192.168.0.106
      IP Version        : 4
      Protocol          : 6
-     IP Total Length   : 638  Bytes(Size of Packet)
+     IP Total Length   : 1769  Bytes(Size of Packet)
      IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57040
-     TTL               : 121
-     Checksum          : 36564
+     Type Of Service   : 0
+     Identification    : 32007
+     TTL               : 56
+     Checksum          : 11665
 
 TCP Header
      Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542173
-     Acknowledge Number   : 1987478086
+     Destination Port     : 51936
+     Sequence Number      : 2521415735
+     Acknowledge Number   : 520600242
      Header Length        : 32 BYTES
      Finish Flag          : 0
      Synchronise Flag     : 0
@@ -836,528 +1303,136 @@ TCP Header
      Push Flag            : 1
      Acknowledgement Flag : 1
      Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 28859
+     Window               : 262
+     Checksum             : 55378
      Urgent Pointer       : 0
 
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 1865
 
                          HEX DATA                         
 
 *  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 02 7E DE D0 00 00 = 79 06 8E D4 22 75 ED EF
-000010  C0 A8 00 68
+000000  45 00 06 E9 7D 07 00 00 = 38 06 2D 91 22 75 ED EF
+000010  C0 A8 00 6A
 
 *  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 13 9D = 76 76 82 46 80 18 01 0B
-000010  70 BB 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
+000000  01 BB CA E0 96 49 C0 37 = 1F 07 BA B2 80 18 01 06
+000010  D8 52 00 00 01 01 08 0A = 59 72 98 D2 89 B1 AF ED
 
 *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 02 07 49 1B 52 = 3C F4 CC AD E5 C4 51 F8
-000010  D5 7D D8 9F 1E F4 50 69 = CB 43 B8 B0 22 96 B4 B3
-000020  FC 38 54 91 3A 0E 3F 9A = 06 63 54 C3 54 DC D5 77
-000030  48 A3 3C 78 14 47 32 BE = 9C B2 27 2B AA 13 DA CE
-000040  F8 11 2A A5 B0 20 05 69 = 1C 9C A6 A9 86 FD E6 C2
-000050  C2 7E A2 4B 80 13 5D 28 = DB FC 22 26 56 23 82 28
-000060  32 B1 19 E1 0E F5 78 4F = 45 72 2D 6F 6E E4 73 CD
-000070  C4 E3 4A 0B 15 E2 FF 73 = 50 82 41 30 3D 72 AD 52
-000080  A4 03 AD D8 02 FD 02 47 = 46 AE 98 B8 E6 8B 96 16
-000090  A4 00 D9 FF E4 B3 32 2C = 86 0F E5 EA 75 1D D0 85
-0000A0  45 EE 60 6F C1 1C 65 61 = A4 0C 44 9B DD 97 81 95
-0000B0  7A 46 29 0E 57 59 DF DC = A7 24 AA FC B9 BD 29 FB
-0000C0  7C B6 39 0D 79 F8 5E 2D = B1 35 AB 86 C7 CF 79 02
-0000D0  D1 E4 12 52 0F 0F 4C 94 = EF 18 3A 81 08 95 91 38
-0000E0  F4 3C F1 B8 C0 AA 15 B6 = 04 C9 47 82 CE 53 66 EF
-0000F0  A6 FB 40 D1 5B 18 8D AC = 24 8B 09 D8 49 B4 27 58
-000100  47 48 4D 2D 90 15 D8 2A = 1C B4 C0 37 6E B5 E1 CD
-000110  0F 2D 1A A6 34 75 A3 B0 = 1E 20 66 E0 5F 41 9A 3F
-000120  64 85 72 E8 89 27 53 FF = FF 57 D3 2B 56 E0 39 2C
-000130  CF 46 F5 DB FF 48 6D E8 = 5B E8 6E 6B CE 5A 1A 60
-000140  65 2D 10 3F FB 77 92 7F = 79 11 F6 58 AE C2 0F EE
-000150  95 DC 72 49 19 87 83 A8 = 9C E7 C6 0C 52 CE 52 33
-000160  86 8D A3 FA 9A A3 69 CC = 14 A4 A7 82 C2 2C 1F CD
-000170  C2 82 7A 2C EA E5 C1 ED = A3 82 B0 8A 25 A0 9F 00
-000180  55 38 1D 73 AB 16 EF 7D = 09 05 78 6B 7B D1 59 C6
-000190  C4 CF 67 6A B9 3D 62 50 = BC 14 57 58 CE C8 68 FB
-0001A0  60 0E 5D CA B1 EF E1 A3 = D8 5D 7B B3 0F 8C F4 02
-0001B0  62 28 DA 0A 59 20 7D 33 = 6F 56 AE 5A FF 9A 48 2C
-0001C0  11 BF 94 5F 22 79 07 25 = 9C ED 25 6D 19 32 8E 40
-0001D0  F9 CA 56 EE 5F 0E AD 91 = 82 5B 9D 2F 25 1A DE F9
-0001E0  AB 2D 5F C2 C2 08 6F A8 = 53 26 36 89 3D 15 A8 3E
-0001F0  96 87 2A 68 46 C5 95 F1 = 23 D3 AA 5D 0F F1 50 24
-000200  DD 59 1A 66 EB 64 DD BC = D5 6A 37 A1 17 03 03 00
-000210  39 92 2B 27 0B AB B3 CB = 09 46 97 6B D2 5B EE 88
-000220  9C F3 74 9F 51 57 D1 82 = C5 B6 BC 70 06 52 02 23
-000230  25 3D CA BA BF 62 C1 18 = 0B 15 A8 AC BA 0E E8 93
-000240  DD 27 1D A1 CF 52 50 58 = 88 B8
+000000  92 E8 67 A0 95 9D E4 1E = 6D 0C 2E CE 64 CE D1 40
+000010  0C B8 AE CD 3C EE 91 AE = 53 A3 34 94 48 82 48 7D
+000020  79 BB 00 DC BD BD A7 AF = 67 CE C2 6A 11 31 E3 7A
+000030  B9 28 DC 96 EF 4A 14 99 = 43 A5 60 28 F4 BD D3 33
+000040  3A 60 CE A1 38 1D 01 2E = C2 50 41 1B E7 04 B1 4D
+000050  2F 56 5B 33 40 75 C4 13 = 11 3E 7E EF 29 C3 35 F8
+000060  C3 71 7A 66 51 B3 6A C1 = 6E 0D 1A 09 E8 F0 DE 7E
+000070  38 34 8F E3 34 62 02 3E = 6D 2A 5E E8 79 79 8C 3A
+000080  02 69 D1 F9 16 5D 08 C3 = B0 E2 C7 7C 30 B0 0C F0
+000090  51 61 65 7E 0E CF FF 0D = 3A 50 02 A1 9E B5 75 69
+0000A0  8C 0F E3 15 0C 37 C7 B7 = 9F 26 63 9B 77 6B 12 39
+0000B0  D2 03 C6 51 C2 9E 2C 0D = 4D D4 90 15 D1 85 3F 30
+0000C0  61 4A 8B 4F 14 95 CB 15 = 60 75 75 93 78 A8 F3 2B
+0000D0  8E 2F A7 33 3A 69 70 46 = 90 DB 4B 81 E5 31 24 BD
+0000E0  F0 E5 30 0C 71 8D 1B D7 = 40 EC 07 28 4B E0 3C 3B
+0000F0  CC 7A 55 E2 99 FA 5C 3B = 16 C1 13 77 49 D0 2C F9
+000100  21 A4 A0 62 01 C0 71 2C = 9C 2D 76 63 10 E5 69 AA
+000110  92 47 4F 32 7B 62 21 17 = CF 5E 3F 92 FF EE 4F A8
+000120  F6 12 2B B7 8C CA A9 42 = F5 47 8F 5F 83 31 D1 73
+000130  84 2B A0 8B 7B 1A 27 42 = 1D 6F 58 9A 48 58 2A 37
+000140  CB 48 33 43 D4 50 1C C1 = AA 80 9C A2 9B FA 83 56
+000150  B7 7B BD 5B F8 7C 81 B1 = 55 F0 DD 29 68 4F 9E B3
+000160  EA 7A 96 0E AA 15 FE 03 = 0A 10 0E 38 84 7C 77 2D
+000170  3D B9 33 FE BF 6C 97 BD = 30 7D 33 D1 23 2B B5 FE
+000180  82 E2 E9 50 07 DB 62 B3 = DD 95 37 5A F6 F0 DA 92
+000190  1D 8C 84 23 D6 37 6A FB = B7 DA CD 2D EC CF 0D 49
+0001A0  D9 6A 8A 15 A6 5A 5E E3 = 70 DC 75 17 84 42 EC 71
+0001B0  36 21 25 FB 13 79 64 A7 = D1 79 11 82 01 96 C8 9A
+0001C0  F1 14 9A AE 61 A9 A0 52 = 08 2C D4 31 F1 D7 47 C2
+0001D0  7A 63 F7 D0 68 91 93 95 = CB 8C 08 BE E1 E8 10 A0
+0001E0  68 02 87 20 53 5F EE 69 = BF E9 B5 3A D4 FA 45 85
+0001F0  89 8B D9 C8 2E 38 37 8E = 23 C4 AE 1F 92 E4 ED 84
+000200  DA 4D C0 9A B9 A5 C5 72 = 5E CD C1 32 9E F6 1F 25
+000210  AA 95 67 84 17 E7 65 EA = 63 EC 28 0B B2 5B 8E 41
+000220  6E 0C 41 15 03 FB CD BE = BA F3 CE A8 7F 54 00 31
+000230  55 41 84 36 78 B4 72 E6 = D8 4B 31 39 03 29 79 76
+000240  BC B2 90 A2 9B 2A 31 2F = 06 58 C8 BD 77 73 0E 6D
+000250  C4 43 DA 21 18 0C 4C B7 = 1D F7 01 59 C4 49 28 96
+000260  57 83 0B 66 23 BB 52 13 = 2E 1F B0 EC 8F CD 74 83
+000270  92 86 48 8D 21 3C AC 30 = 7E F1 C7 E0 BA B1 E0 7C
+000280  53 6C 72 20 6B 84 05 32 = DC BE 25 3E 57 09 7E 4D
+000290  36 B1 52 C2 B9 5E FB 02 = 4D 2B 67 D7 4A 48 30 96
+0002A0  4F 96 1B 47 B3 FC F1 5B = 5D E7 4D 10 F3 87 04 3C
+0002B0  E4 AC FC 83 26 C8 02 64 = F3 56 79 6C 5C 24 1F 58
+0002C0  37 67 28 2C 24 33 5A C0 = 0B CA 63 12 72 D1 77 CA
+0002D0  0D 6C 8D 83 9B C8 63 DA = BC F5 98 55 AC B0 F3 DD
+0002E0  A0 9B 3A 7A C6 ED 76 0A = 2B B2 59 69 8C 1A 07 48
+0002F0  FE FC 73 3D A8 E6 81 0D = BB 91 0C F1 B7 3C 47 12
+000300  7A DB 7D B9 72 A7 F2 98 = 53 0A 42 4E C4 1D D1 50
+000310  C6 EE 44 6B 63 91 6A 6E = 0C FE E7 20 EC C9 52 15
+000320  AD C2 20 E5 8B B9 75 02 = 42 1F 37 06 7C 5E E6 88
+000330  69 27 CB 8E 99 A1 EB 86 = 21 D2 6D E1 25 95 D7 13
+000340  E3 31 E5 05 B6 A4 2C 42 = F5 A7 C4 5E 57 B5 01 C2
+000350  14 82 C3 E0 01 31 0B D4 = B7 5E 99 3A 5A 7F 3C 9A
+000360  28 82 9A 81 1E 4E 7E E3 = 3E 08 38 7C 34 B2 B1 DE
+000370  71 16 FD 56 A4 18 ED 34 = CD F1 AC 97 42 E9 0A 42
+000380  57 6B 0A 0C A4 BF E3 CB = 12 57 3D 65 F1 A3 B3 D1
+000390  B6 5C DC C5 5F 36 3D D7 = BC 44 4B D9 F8 33 F3 C2
+0003A0  A7 1F D5 D9 D0 5B 43 5F = 60 3D A2 12 CF D0 2E 92
+0003B0  D7 66 C0 A7 3B DE E4 43 = A1 77 4C 57 20 DD 44 CE
+0003C0  81 C9 72 3E 9F 09 F0 3D = BF 8A 8E 2B 86 E8 FA 83
+0003D0  CA 3C F9 69 57 3C 9D 96 = F3 4F 55 4C D2 27 D0 DB
+0003E0  B4 49 14 46 13 BF 4F DD = 66 CD F2 E5 2C C3 22 57
+0003F0  55 D7 78 13 D4 41 A5 29 = 4A 86 4C D5 0E 71 01 E3
+000400  20 1B 61 A8 A2 8C FF F8 = A5 E9 18 36 FF 60 55 07
+000410  AB 5B F3 57 12 4D 1E 22 = 41 05 9C 8C EC E4 F3 DD
+000420  E0 73 D5 2E B5 96 71 37 = D5 54 C2 BF 21 42 AF A7
+000430  B0 BF 94 C9 4B ED 77 71 = F5 EB BD 40 B8 3C 2D 3E
+000440  17 90 90 DC 04 70 D1 2C = 36 20 55 72 8B 11 8B 00
+000450  F2 C6 C3 33 BE 51 87 76 = 87 A1 CB D8 A0 EA B1 6A
+000460  BD C8 64 8F FD 0A 8E 62 = F1 CF A4 D6 96 54 5B A6
+000470  82 3F ED 54 FD D6 CF FB = 6C D9 74 B0 3E E3 40 87
+000480  AD DF B9 1C 66 54 3C AA = E6 68 04 EB 25 D6 80 AC
+000490  57 0C 5A 9B 7A DA B2 9A = D3 8D DE F7 5C 1C 64 A5
+0004A0  F3 9E 85 A6 0A 6C 9D BA = 34 4C 19 B5 59 2E 13 A7
+0004B0  BD B4 FF F2 4B 9E 06 F1 = 11 ED 6D 37 E4 18 25 1D
+0004C0  4D AF ED DC 22 6B 4F 5B = 6B 62 83 ED 80 88 0C 31
+0004D0  76 2C 45 61 E0 9A F9 A1 = 2C FB B4 77 72 9C 7A FC
+0004E0  B2 ED 17 45 BB CE 65 23 = 73 9A CA D8 50 4A BF 28
+0004F0  B9 29 4A 1A CC 53 99 D6 = AA FD A4 B8 7C AF 4A 96
+000500  CF F6 1F 2D 04 4F 9B 1F = 69 94 13 F7 DE E7 7A EB
+000510  6D 42 62 8B 91 1D 06 55 = 9D 40 DE C5 DD 5A D6 06
+000520  4D 30 6A DD 3B 7D 52 A2 = 40 8B AF 31 61 54 63 AA
+000530  E1 AC 86 7B D6 25 DC 86 = DD 23 4D 9B 1B 5B 04 FB
+000540  D1 43 93 87 B7 BC 95 12 = CA 7B 75 3F B8 C4 58 05
+000550  E7 86 C6 A7 3D F6 D6 8A = A0 72 EE C2 AE 1A 9B 3F
+000560  D3 FA 07 75 A4 4C EB 01 = C0 CF 25 9C 8A 4C F1 81
+000570  82 5D 3E 81 F6 59 E1 D8 = C0 0A 95 1F 96 BF 1E B7
+000580  6F D7 EB 2F 56 E3 CD 21 = C0 EA FD 47 E1 FB 98 F5
+000590  26 2E 6B D9 3E 34 44 B8 = 0E 8F 27 43 81 0F 56 46
+0005A0  6E 62 B5 28 0A DA 33 AC = 3C 55 66 4C 9B 1F CB AD
+0005B0  5A 07 78 6E 6C 26 EC E2 = FC 45 ED EB EB 68 2A FD
+0005C0  99 5D 2A 32 19 F3 B0 6A = EC E7 FA 82 61 90 EA 52
+0005D0  FF 7F EE 72 19 6D 73 7E = 9D F3 FF AC B2 C4 30 D4
+0005E0  84 F6 59 54 D0 33 D3 38 = 25 8D C4 92 26 BF BE E9
+0005F0  FD 73 41 15 40 2E 22 6F = 14 6B 90 74 22 3A 48 33
+000600  A7 C6 0C 8B F2 32 82 39 = 16 18 5B E0 AA 28 05 B8
+000610  6B FC BA 7F 7B 7D 6E DD = 9D 57 71 11 AE F5 3D 84
+000620  C9 45 F1 08 BA 99 96 E1 = B4 5F D0 B8 A4 B2 EA 4B
+000630  A7 6C BE CC 0D 4A CE 70 = 2C 68 12 25 12 0B 32 66
+000640  4A F0 2C BA DE 17 79 9A = 34 3E 99 AE B4 38 85 0F
+000650  12 8F 8E 31 BC 58 01 A9 = 05 7A E4 B5 61 55 11 BB
+000660  56 B6 96 DE DA 19 F1 C3 = 68 9D 85 B8 F0 DF 6D 95
+000670  8B 4A D7 C7 A1 CB 5F F9 = 9D 28 9F 7B 22 31 5D 1C
+000680  34 BF 72 DD F7 A8 D1 C7 = 02 60 E2 99 4C EA 5F 61
+000690  AD 07 A0 3C F1 26 8E 05 = 10 EF 42 43 58 97 2E 7A
+0006A0  F4 DD 72 75 59 82 90 84 = 5F 95 27 95 C8 22 38 BC
+0006B0  BE A8 4D 74 2C
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 ***********************TCP Packet 18 *************************
 
 IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 83  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57041
-     TTL               : 121
-     Checksum          : 37118
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542759
-     Acknowledge Number   : 1987478086
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 267
-     Checksum             : 26409
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 6867
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 53 DE D1 00 00 = 79 06 90 FE 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 15 E7 = 76 76 82 46 80 18 01 0B
-000010  67 29 00 00 01 01 08 0A = 43 60 25 62 44 CF FB A3
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 1A D3 8B D1 = 2B 46 8E F3 B0 9C 7E 80
-000010  03 0D A1 53 8C FC 4E 7C = 6B 10 64 BB 28 FC 60
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 19 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57042
-     TTL               : 121
-     Checksum          : 37148
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542790
-     Acknowledge Number   : 1987478273
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 272
-     Checksum             : 59659
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE D2 00 00 = 79 06 91 1C 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 16 06 = 76 76 83 01 80 10 01 10
-000010  E9 0B 00 00 01 01 08 0A = 43 60 25 68 44 CF FB A3
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 20 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57043
-     TTL               : 121
-     Checksum          : 37147
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542790
-     Acknowledge Number   : 1987478304
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 272
-     Checksum             : 59570
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE D3 00 00 = 79 06 91 1B 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 16 06 = 76 76 83 20 80 10 01 10
-000010  E8 B2 00 00 01 01 08 0A = 43 60 25 82 44 CF FB C3
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 21 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 250  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57044
-     TTL               : 121
-     Checksum          : 36948
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542790
-     Acknowledge Number   : 1987478304
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 272
-     Checksum             : 20195
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 49425
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 FA DE D4 00 00 = 79 06 90 54 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 16 06 = 76 76 83 20 80 18 01 10
-000010  4E E3 00 00 01 01 08 0A = 43 60 26 4F 44 CF FB C3
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 C1 11 19 BF = 44 0C 3C 6A 1D 0B 2B 68
-000010  55 CD ED 55 08 95 F2 4E = F8 5F 0D 33 D6 24 07 87
-000020  2A EE E9 BE E2 5A 62 CC = 79 9E 46 D5 0D 8C 1B A0
-000030  6F D2 40 55 E2 BB 06 DA = 15 4D 95 EB 8F 50 35 DB
-000040  A5 BD 0A F1 3C 36 67 82 = 85 0C 87 43 5C F5 26 2F
-000050  5C 5C F0 D5 4B DA BD 91 = 05 5D 72 91 5E 3D B1 EE
-000060  E1 64 07 45 14 BC 8D 9E = 27 09 F5 85 B3 7A DB 4C
-000070  0D 8E 19 EC 92 31 0F 98 = 54 E5 84 48 31 F6 82 32
-000080  E8 14 A1 66 1C 93 23 83 = 66 26 47 D9 FD 73 A4 16
-000090  D8 5C D8 F0 D0 86 90 74 = 88 67 53 F0 F6 B3 64 55
-0000A0  01 5C E8 FC 04 3F 3A F6 = 42 6A 34 78 D5 9C 4F 8E
-0000B0  35 7E B2 72 53 91 33 1A = FC F0 15 05 33 0C C8 9F
-0000C0  8A EB 64 48 88 3B
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 22 *************************
-
-IP Header
-     Source IP         : 34.117.237.239
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 96
-     Identification    : 57045
-     TTL               : 121
-     Checksum          : 37145
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 41312
-     Sequence Number      : 1599542988
-     Acknowledge Number   : 1987478343
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 272
-     Checksum             : 58859
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 60 00 34 DE D5 00 00 = 79 06 91 19 22 75 ED EF
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB A1 60 5F 57 16 CC = 76 76 83 47 80 10 01 10
-000010  E5 EB 00 00 01 01 08 0A = 43 60 26 6F 44 CF FC B0
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 23 *************************
-
-IP Header
-     Source IP         : 45.133.44.4
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 0
-     Identification    : 52410
-     TTL               : 53
-     Checksum          : 24176
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 33450
-     Sequence Number      : 3671864611
-     Acknowledge Number   : 112420885
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 0
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 11
-     Checksum             : 40824
-     Urgent Pointer       : 0
-
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 34 CC BA 40 00 = 35 06 5E 70 2D 85 2C 04
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB 82 AA DA DC 35 23 = 06 B3 68 15 80 10 00 0B
-000010  9F 78 00 00 01 01 08 0A = 40 D7 13 C5 EF 86 75 4F
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 24 *************************
-
-IP Header
-     Source IP         : 45.133.44.4
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 91  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 0
-     Identification    : 52411
-     TTL               : 53
-     Checksum          : 24136
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 33450
-     Sequence Number      : 3671864611
-     Acknowledge Number   : 112420885
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 11
-     Checksum             : 4352
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 8896
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 5B CC BB 40 00 = 35 06 5E 48 2D 85 2C 04
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB 82 AA DA DC 35 23 = 06 B3 68 15 80 18 00 0B
-000010  11 00 00 00 01 01 08 0A = 40 D7 13 C5 EF 86 75 4F
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 22 C0 86 68 = 97 3E 67 7B 2E 6A 63 39
-000010  86 19 7A 08 49 00 4A 56 = 9E 89 2D 11 D2 A4 31 FD
-000020  9C 17 D2 6B E4 86 84
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 25 *************************
-
-IP Header
-     Source IP         : 45.133.44.4
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 91  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 0
-     Identification    : 52412
-     TTL               : 53
-     Checksum          : 24135
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 33450
-     Sequence Number      : 3671864650
-     Acknowledge Number   : 112420885
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 11
-     Checksum             : 21930
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 8938
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 5B CC BC 40 00 = 35 06 5E 47 2D 85 2C 04
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB 82 AA DA DC 35 4A = 06 B3 68 15 80 18 00 0B
-000010  55 AA 00 00 01 01 08 0A = 40 D7 14 9B EF 86 75 93
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 22 EA BA 96 = DC 2D 20 95 E1 24 8B 5C
-000010  BB C5 90 51 2B E5 43 FD = 4F F8 A8 83 C4 13 66 57
-000020  C1 AB 21 C8 8A 40 9B
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 26 *************************
-
-IP Header
-     Source IP         : 45.133.44.4
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 76  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 0
-     Identification    : 52413
-     TTL               : 53
-     Checksum          : 24149
-
-TCP Header
-     Source Port          : 443
-     Destination Port     : 33450
-     Sequence Number      : 3671864689
-     Acknowledge Number   : 112420885
-     Header Length        : 32 BYTES
-     Finish Flag          : 0
-     Synchronise Flag     : 0
-     Reset Flag           : 0
-     Push Flag            : 1
-     Acknowledgement Flag : 1
-     Urgent Flag          : 0
-     Window               : 11
-     Checksum             : 52929
-     Urgent Pointer       : 0
-
-********* SSL RECORD LAYER **********
-     Record Type: Application Data
-     Version: TLS 1.3
-     Length: 4987
-
-                         HEX DATA                         
-
-*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *
-000000  45 00 00 4C CC BD 40 00 = 35 06 5E 55 2D 85 2C 04
-000010  C0 A8 00 68
-
-*  *  *  *  *  *  *  *  *  TCP HEADER *  *  *  *  *  *  *  *
-000000  01 BB 82 AA DA DC 35 71 = 06 B3 68 15 80 18 00 0B
-000010  CE C1 00 00 01 01 08 0A = 40 D7 14 9B EF 86 75 93
-
-*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *
-000000  17 03 03 00 13 7B B2 EF = BC 9C 7A 2A DD CB 0A 2E
-000010  73 2B 45 D5 DA D6 3C 28
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-***********************TCP Packet 27 *************************
-
-IP Header
-     Source IP         : 45.133.44.4
-     Destination IP    : 192.168.0.104
-     IP Version        : 4
-     Protocol          : 6
-     IP Total Length   : 52  Bytes(Size of Packet)
-     IP Header Length  : 20 Bytes
-     Type Of Service   : 0
-     Identification    : 52414
-     TTL               : 53
-     Checksum          : 24172
-
-TCP Header
-     Source Port          : 443
-     Destination P
+     Source IP         : 44.216.137.107
+     Destination IP    : 192.168.0.106
+     IP 

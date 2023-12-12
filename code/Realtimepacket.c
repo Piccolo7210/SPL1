@@ -1,10 +1,7 @@
-//#include<netinet/in.h>
 #include<stdio.h>	//For standard things
 #include<stdlib.h>	//malloc
 #include<string.h>	//strlen
 #include<netinet/ip_icmp.h>	//Provides declarations for icmp header
-//#include<netinet/udp.h>	//Provides declarations for udp header
-//#include<netinet/tcp.h>	//Provides declarations for tcp header
 #include<netinet/ip.h>	
 #include<sys/socket.h>
 #include<arpa/inet.h>
@@ -24,10 +21,10 @@ int ICMP_num=0,UDP_num=0,TCP_num=0,others=0,SSL_num=0,total=0,i,j;
 FILE *fp;
 char version[15]="";
 char record_type[100]="";
-int main(){
+int Realtimepacket(){
 	int sockaddSize,dataSize;
 	struct sockaddr saddr;
-	struct in_addr in;
+	//struct in_addr in;
 	unsigned char *buff = (unsigned char *)malloc(65536);
 	printf("Starting .......\n");
 	fp=fopen("info.txt","w+");
@@ -110,8 +107,8 @@ void CapturingPacket(unsigned char* buff,int dataSize){
 void IPheader(unsigned char* buff, int dataSize)
 {
 	struct iphdr *ip = (struct iphdr *)buff;
-	unsigned short iphdrlen;
-	iphdrlen =ip->ihl*4;
+	//unsigned short iphdrlen;
+	//iphdrlen =ip->ihl*4;
 	memset(&source, 0, sizeof(source));
 	memset(&dest, 0, sizeof(dest));
 	source.sin_addr.s_addr = ip->saddr;

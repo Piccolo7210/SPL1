@@ -17,12 +17,17 @@ icmpRead.o: icmpRead.c icmpRead.h
 arpRead.o: arpRead.c arpRead.h
 	     $(CC) -c $(CFLAGS) arpRead.c
 
-PacketEye: argdump.o hexdump.o icmpRead.o arpRead.o
-	   $(CC) -o PacketEye argdump.o hexdump.o icmpRead.o arpRead.o $(LDFLAGS)
+Realtimepacket.o: Realtimepacket.c Realtimepacket.h
+	     $(CC) -c $(CFLAGS) Realtimepacket.c
+
+SynFlood.o: SynFlood.c SynFlood.h
+	     $(CC) -c $(CFLAGS) SynFlood.c
+PacketEye: argdump.o hexdump.o icmpRead.o arpRead.o  SynFlood.o Realtimepacket.o
+	   $(CC) -o PacketEye argdump.o hexdump.o icmpRead.o arpRead.o  SynFlood.o Realtimepacket.o $(LDFLAGS)
 	   $(STRIP) PacketEye
 
 .PHONY: clean
 
 clean:
-	rm -rf PacketEye argdump.o hexdump.o icmpRead.o arpRead.o
+	rm -rf PacketEye argdump.o hexdump.o icmpRead.o arpRead.o SynFlood.o Realtimepacket.o
 
