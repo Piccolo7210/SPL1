@@ -1,7 +1,7 @@
-#include<stdio.h>	//For standard things
-#include<stdlib.h>	//malloc
-#include<string.h>	//strlen
-#include<netinet/ip_icmp.h>	//Provides declarations for icmp header
+#include<stdio.h>	
+#include<stdlib.h>	
+#include<string.h>	
+#include<netinet/ip_icmp.h>	
 #include<netinet/ip.h>	
 #include<sys/socket.h>
 #include<arpa/inet.h>
@@ -24,10 +24,9 @@ char record_type[100]="";
 int Realtimepacket(){
 	int sockaddSize,dataSize;
 	struct sockaddr saddr;
-	//struct in_addr in;
 	unsigned char *buff = (unsigned char *)malloc(65536);
 	printf("Starting .......\n");
-	fp=fopen("info.txt","w+");
+	fp=fopen("LivePacket.txt","w+");
 	if(fp==NULL){
 		printf("Error on creating FILE.\n");
 		return -5;
@@ -37,32 +36,29 @@ int Realtimepacket(){
 		printf("Socket creating ERROR.\n");
 		return -2;// -2 defining as socket error
 	}
-	char tmp[] = "Packet No";
-    printf("%-20s", tmp);
+	
+    printf("%-20s", "Packet No");
+
+    char temp[] = "IP Source Address";
+    printf("%-20s", temp);
+
+    strcpy(temp, "IP Dest Address");
+    printf("%-20s", temp);
+
+    strcpy(temp, "Protocol");
+    printf("%-15s", temp);
     //refresh();
 
-    char tm[] = "IP Source Address";
-    printf("%-20s", tm);
+    strcpy(temp, "Source Port");
+    printf("%-20s", temp);
     //refresh();
 
-    strcpy(tm, "IP Dest Address");
-    printf("%-20s", tm);
+    strcpy(temp, "Dest Port");
+    printf("%-20s", temp);
     //refresh();
 
-    strcpy(tm, "Protocol");
-    printf("%-15s", tm);
-    //refresh();
-
-    strcpy(tm, "Source Port");
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "Dest Port");
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "Info");
-    printf("%-20s\n", tm);
+    strcpy(temp, "Info");
+    printf("%-20s\n", temp);
     //refresh();
     printf("\n");
 	while(1){
@@ -199,6 +195,7 @@ void tcpPacket(unsigned char* buff, int dataSize)
 }
 void udpPacket(unsigned char *buff , int dataSize)
 {
+	char proto[30]="UDP";
 	struct iphdr *ip = (struct iphdr *)buff;
 	unsigned short iphdrlen;
 	iphdrlen = ip->ihl*4;
@@ -226,13 +223,15 @@ void udpPacket(unsigned char *buff , int dataSize)
 	Hexdata(buff + iphdrlen + sizeof(udph),( dataSize - sizeof(udph) - iphdrlen ));
 	
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *\n\n");
+	printf("%-20d%-20s", total, inet_ntoa(source.sin_addr));
+    printf("%-20s%-20s%-20d%-20d NULL\n\n", inet_ntoa(dest.sin_addr), proto, ntohs(udph->source), ntohs(udph->dest));
 	
 }
 
 void icmpPacket(unsigned char* buff , int dataSize)
 {
 	
-	
+	//char proto[30]="ICMP";
 	struct iphdr *ip = (struct iphdr *)buff;
 	unsigned short iphdrlen;
 	iphdrlen = ip->ihl*4;

@@ -11,15 +11,10 @@
 void pipeline();
 void commandLine(char *pcapfile[100]);
 int main(int argc,char *arg[]){
-	int i;
 	if(argc==1)pipeline();
-	else if(argc==2){
-		char str[100];
-		for(i=0;arg[1][i];i++){
-			str[i]=arg[1][0];
-		}
-		str[i]='\0';
-		if(strcmp(str,"live")==0){
+	else if(argc==2)
+	{	
+		if(arg[1][0]=='-' && arg[1][1]=='L'){
 			Realtimepacket();
 		}
 		else{
