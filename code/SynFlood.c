@@ -12,8 +12,8 @@
 FILE *filepointer;
 char fileName[100];
 int pacekt_no;
-long int spoof[MAX],tcp = 0, http = 0, ssl = 0;
-long  int false_no = -1, fake_num = -1;
+long  int spoof[MAX],tcp = 0, http = 0, ssl = 0;
+long int  false_no = -1, fake_num = -1;
 struct Synfld spam[MAX];
 
 
@@ -57,7 +57,7 @@ ssl=0;
   while(!feof(filepointer))
     {
         //printf("ssl : %lld\n\n ",ssl);
-                char source_ip[100], destination_ip[100];
+        char source_ip[100], destination_ip[100];
         int source, destination,source_port,destination_port;
         
         fread(&packet_head, sizeof(struct packethdr), 1,filepointer);
@@ -240,7 +240,7 @@ ssl=0;
                 
                     
             }
-            printf("\nSYN Packets Received : %ld\n",spam[i].syn);
+            printf("SYN Packets Received : %ld\n",spam[i].syn);
             printf("SYN_ACK Packets Sent : %ld\n",spam[i].syn_ack);
         }
 
@@ -263,9 +263,10 @@ int is_same(int address1[], u_int32_t address2[])
 void checking_syn(int address[], int s_a)
 {
 
-    long  int syn_val;
-    int flag = 0;
-    int same =0;
+    long int syn_val;
+    long int flag = 0;
+    int same;
+    same=0;
     long int i , ind;
     for (  i = 0; i <= false_no; i++)
     {
@@ -295,7 +296,7 @@ void checking_syn(int address[], int s_a)
 
     if (flag == 0)
     {
-        false_no++;
+    	false_no++;
         for (int i = 0; i < 4; i++)
         spam[false_no].IP[i] = address[i];
         

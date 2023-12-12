@@ -22,12 +22,12 @@ Realtimepacket.o: Realtimepacket.c Realtimepacket.h
 
 SynFlood.o: SynFlood.c SynFlood.h
 	     $(CC) -c $(CFLAGS) SynFlood.c
-PacketEye: argdump.o hexdump.o icmpRead.o arpRead.o  SynFlood.o Realtimepacket.o
-	   $(CC) -o PacketEye argdump.o hexdump.o icmpRead.o arpRead.o  SynFlood.o Realtimepacket.o $(LDFLAGS)
+PacketEye: argdump.o hexdump.o icmpRead.o arpRead.o Realtimepacket.o SynFlood.o
+	   $(CC) -o PacketEye argdump.o hexdump.o icmpRead.o arpRead.o Realtimepacket.o SynFlood.o $(LDFLAGS)
 	   $(STRIP) PacketEye
 
 .PHONY: clean
 
 clean:
-	rm -rf PacketEye argdump.o hexdump.o icmpRead.o arpRead.o SynFlood.o Realtimepacket.o
+	rm -rf PacketEye argdump.o hexdump.o icmpRead.o arpRead.o Realtimepacket.o SynFlood.o
 
