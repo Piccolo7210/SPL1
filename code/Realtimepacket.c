@@ -1,7 +1,7 @@
-#include<stdio.h>	//For standard things
-#include<stdlib.h>	//malloc
-#include<string.h>	//strlen
-#include<netinet/ip_icmp.h>	//Provides declarations for icmp header
+#include<stdio.h>	
+#include<stdlib.h>	
+#include<string.h>	
+#include<netinet/ip_icmp.h>
 #include<netinet/ip.h>	
 #include<sys/socket.h>
 #include<arpa/inet.h>
@@ -21,58 +21,115 @@ int ICMP_num=0,UDP_num=0,TCP_num=0,others=0,SSL_num=0,total=0,i,j;
 FILE *fp;
 char version[15]="";
 char record_type[100]="";
-int Realtimepacket(){
-	int sockaddSize,dataSize;
+int Realtimepacket(int x){
 	struct sockaddr saddr;
-	//struct in_addr in;
+	unsigned int sockaddSize,dataSize;
 	unsigned char *buff = (unsigned char *)malloc(65536);
-	printf("Starting .......\n");
-	fp=fopen("info.txt","w+");
+	memset(buff,0,65536);
+	printf("!!!!!!!!!Starting !!!!!!!!!!!\n");
+	fp=fopen("PacketInfo.txt","w+");
 	if(fp==NULL){
 		printf("Error on creating FILE.\n");
-		return -5;
+		return -4;
 	}
-	rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
+	switch(x)
+	{
+		case 1: rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
+			if(rawSocket<0)
+			{
+				printf("Socket creating ERROR.\n");
+				return -2;// -2 defining as socket error
+			}
+				break;
+		case 2: rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
+			//printf("Hello\n");
+			if(rawSocket<0)
+			{
+				printf("Socket creating ERROR.\n");
+				return -2;// -2 defining as socket error
+				
+			}
+			break;
+		case 3: rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_UDP);
+			if(rawSocket<0)
+			{
+				printf("Socket creating ERROR.\n");
+				return -2;// -2 defining as socket error
+				
+			}
+			break;
+		default : 	printf("Invalid input");
+					return -6;
+	}
+	printf("!!!!!!!!!Starting !!!!!!!!!!!\n");
+	/*rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
 	if(rawSocket<0){
 		printf("Socket creating ERROR.\n");
 		return -2;// -2 defining as socket error
+	}*/
+	char pack[] = "Packet No";
+	char tm[] = "IP Source Address";
+	switch(x)
+	{
+		case 1: 
+    			printf("%-20s", pack);
+
+    			
+    			printf("%-20s", tm);
+    			strcpy(tm, "IP Dest Address");
+    			printf("%-20s", tm);
+		        strcpy(tm, "Protocol");
+    			printf("%-15s", tm);
+    			strcpy(tm, "Source Port");
+    			printf("%-20s", tm);
+    			strcpy(tm, "Dest Port");
+    			printf("%-20s", tm);
+    			strcpy(tm, "Info");
+    			printf("%-20s\n", tm);
+    			printf("\n");
+    			break;
+    		case 2: 
+    			printf("%-20s", pack);
+    			/*printf("%-20s", tm);
+    			strcpy(tm, "IP Dest Address");
+    			printf("%-20s", tm);*/
+		        strcpy(tm, "Protocol");
+    			printf("%-15s", tm);
+    			strcpy(tm, "Type");
+    			printf("%-20s", tm);
+    			strcpy(tm, "Code");
+    			printf("%-20s", tm);
+    			strcpy(tm, "CheckSum");
+    			printf("%-20s\n", tm);
+    			printf("\n");
+    			break;
+    		case 3: printf("%-20s", pack);
+
+    			
+    			printf("%-20s", tm);
+    			strcpy(tm, "IP Dest Address");
+    			printf("%-20s", tm);
+		        strcpy(tm, "Protocol");
+    			printf("%-15s", tm);
+    			strcpy(tm, "Source Port");
+    			printf("%-20s", tm);
+    			strcpy(tm, "Dest Port");
+    			printf("%-20s", tm);
+    			printf("\n");
+    			break;
 	}
-	char tmp[] = "Packet No";
-    printf("%-20s", tmp);
-    //refresh();
-
-    char tm[] = "IP Source Address";
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "IP Dest Address");
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "Protocol");
-    printf("%-15s", tm);
-    //refresh();
-
-    strcpy(tm, "Source Port");
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "Dest Port");
-    printf("%-20s", tm);
-    //refresh();
-
-    strcpy(tm, "Info");
-    printf("%-20s\n", tm);
-    //refresh();
-    printf("\n");
 	while(1){
 		sockaddSize= sizeof(struct sockaddr);
+		//printf("Hello\n");
 		dataSize=recvfrom(rawSocket,buff,65536,0,&saddr,&sockaddSize);
+		//printf("Hello\n");
 		if(dataSize<0){
 			printf("Receiving Failed. Failed to Capture Packets.\n");
 			return -3;// Receiving failure defining as -3
 		}
+		//printf("Hello\n");
 		CapturingPacket(buff,dataSize);
+		//printf("Hello\n");
 		sleep(1);	
 	}
 	close(rawSocket);
@@ -198,69 +255,79 @@ void tcpPacket(unsigned char* buff, int dataSize)
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *\n\n");
 }
 void udpPacket(unsigned char *buff , int dataSize)
-{
+{	
+	char proto[30]="UDP";
 	struct iphdr *ip = (struct iphdr *)buff;
 	unsigned short iphdrlen;
 	iphdrlen = ip->ihl*4;
 	
-	struct udphdr *udph = (struct udphdr*)(buff + iphdrlen);
+	struct udphdr *udp = (struct udphdr*)(buff + iphdrlen);
 	
 	fprintf(fp,"***********************UDP Packet %d *************************\n",UDP_num);
 	//IP HEADER analysis
 	IPheader(buff,dataSize);			
 	//UDP analysis
 	fprintf(fp,"\nUDP Header\n");
-	fprintf(fp,"     Source Port      : %d\n" , ntohs(udph->source));
-	fprintf(fp,"     Destination Port : %d\n" , ntohs(udph->dest));
-	fprintf(fp,"     UDP Length       : %d\n" , ntohs(udph->len));
-	fprintf(fp,"     UDP Checksum     : %d\n" , ntohs(udph->check));
+	fprintf(fp,"     Source Port      : %d\n" , ntohs(udp->source));
+	fprintf(fp,"     Destination Port : %d\n" , ntohs(udp->dest));
+	fprintf(fp,"     UDP Length       : %d\n" , ntohs(udp->len));
+	fprintf(fp,"     UDP Checksum     : %d\n" , ntohs(udp->check));
 	fprintf(fp,"\n");
 	//IP header part
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *\n");
 	Hexdata(buff , iphdrlen);
 	//UDP part
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  *  UDP HEADER *  *  *  *  *  *  *  *\n");
-	Hexdata(buff+iphdrlen , sizeof(udph));
+	Hexdata(buff+iphdrlen , sizeof(udp));
 	// DATA
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *\n");	
-	Hexdata(buff + iphdrlen + sizeof(udph),( dataSize - sizeof(udph) - iphdrlen ));
+	Hexdata(buff + iphdrlen + sizeof(udp),( dataSize - sizeof(udp) - iphdrlen ));
 	
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *\n\n");
+	printf("%-20d%-20s", total, inet_ntoa(source.sin_addr));
+            printf("%-20s%-20s%-20d%-20d\n\n", inet_ntoa(dest.sin_addr), proto, ntohs(udp->source), ntohs(udp->dest));
 	
 }
 
 void icmpPacket(unsigned char* buff , int dataSize)
 {
-	
-	
+	char proto[30]="ICMP";
+	char typ[50]="NULL";
 	struct iphdr *ip = (struct iphdr *)buff;
 	unsigned short iphdrlen;
 	iphdrlen = ip->ihl*4;
-	struct icmphdr *icmph = (struct icmphdr *)(buff + iphdrlen);
+	struct icmphdr *icmp = (struct icmphdr *)(buff + iphdrlen);
 	fprintf(fp,"***********************ICMP Packet %d *************************\n",ICMP_num);	
 	//IP header
 	IPheader(buff , dataSize);	
 	fprintf(fp,"\n");
 	// ICMP part
 	fprintf(fp,"ICMP Header\n");
-	fprintf(fp,"    Type : %d",(unsigned int)(icmph->type));
-	if((unsigned int)(icmph->type) == 11) 
+	fprintf(fp,"    Type : %d",(unsigned int)(icmp->type));
+	if((unsigned int)(icmp->type) == 8)strcpy(typ,"Echo Request");
+	else if((unsigned int)(icmp->type) == 0)strcpy(typ,"Echo Reply");
+	else if((unsigned int)(icmp->type) == 11)strcpy(typ,"TTL Expired");
+	else if((unsigned int)(icmp->type) == 3)strcpy(typ,"Dest Unrchle");
+	else if((unsigned int)(icmp->type) == 5)strcpy(typ,"Rdrct Msg");
+	else if((unsigned int)(icmp->type) == 9)strcpy(typ,"Rtr Adv");
+	if((unsigned int)(icmp->type) == 11) 
 		fprintf(fp,"  (TTL Expired)\n");
-	else if((unsigned int)(icmph->type) == ICMP_ECHOREPLY) 
+	else if((unsigned int)(icmp->type) == ICMP_ECHOREPLY) 
 		fprintf(fp,"  (ICMP Echo Reply)\n");
-	fprintf(fp,"    Code : %d\n",(unsigned int)(icmph->code));
-	fprintf(fp,"    Checksum : %d\n",ntohs(icmph->checksum));
+	fprintf(fp,"    Code : %d\n",(unsigned int)(icmp->code));
+	fprintf(fp,"    Checksum : %d\n",ntohs(icmp->checksum));
 	fprintf(fp,"\n");
 	//Ip hex
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  * IP HEADER *  *  *  *  *  *  *  *  *\n");
 	Hexdata(buff,iphdrlen);
 	//UDP hex	
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  * UDP HEADER *  *  *  *  *  *  *  *  *\n");
-	Hexdata(buff + iphdrlen , sizeof(icmph));
+	Hexdata(buff + iphdrlen , sizeof(icmp));
 	//Data hex
 	fprintf(fp,"*  *  *  *  *  *  *  *  *  * DATA *  *  *  *  *  *  *  *  *  *\n");	
-	Hexdata(buff + iphdrlen + sizeof(icmph),(dataSize - sizeof(icmph)- iphdrlen));
+	Hexdata(buff + iphdrlen + sizeof(icmp),(dataSize - sizeof(icmp)- iphdrlen));
 	fprintf(fp,"\n*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *\n\n");
+	printf("%-20d%-15s%-20s%-20d%-20d\n\n",total,proto,typ,(unsigned int)icmp->code,ntohs(icmp->checksum));
 	//refresh();
 }
 
@@ -350,5 +417,3 @@ int sslPacket(unsigned char* buff,int dataSize){
 	fprintf(fp,"%d\n",ntohs(ssl->length));
 	return 1; // indicating that it has ssl layer.
 }
-
-
