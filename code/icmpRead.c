@@ -80,6 +80,26 @@ void ICMPinfo(unsigned char *data,int size){
 	printf("%d",((unsigned char *)data)[i++]);
 	printf(" (REQUEST)\n");
 	}
+	else if(data[i] == 3){
+	printf("TYPE: ");
+	printf("%d",((unsigned char *)data)[i++]);
+	printf(" (DESTINATION UNREACHABLE)\n");
+	}
+	else if(data[i] == 5){
+	printf("TYPE: ");
+	printf("%d",((unsigned char *)data)[i++]);
+	printf(" (REDIRECT MESSAGE)\n");
+	}
+	else if(data[i] == 11){
+	printf("TYPE: ");
+	printf("%d",((unsigned char *)data)[i++]);
+	printf(" (TIME EXCEEDED)\n");
+	}
+	else if(data[i] == 12){
+	printf("TYPE: ");
+	printf("%d",((unsigned char *)data)[i++]);
+	printf(" (PARAMETER PROBLEM)\n");
+	}
 	printf("CODE: ");
 	printf("%d\n",((unsigned char *)data)[i++]);
 	printf("CHECKSUM: ");

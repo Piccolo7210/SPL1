@@ -1,7 +1,7 @@
 #include<stdio.h>	
 #include<stdlib.h>	
 #include<string.h>	
-#include<netinet/ip_icmp.h>
+//#include<netinet/ip_icmp.h>
 #include<netinet/ip.h>	
 #include<sys/socket.h>
 #include<arpa/inet.h>
@@ -26,7 +26,7 @@ int Realtimepacket(int x){
 	unsigned int sockaddSize,dataSize;
 	unsigned char *buff = (unsigned char *)malloc(65536);
 	memset(buff,0,65536);
-	printf("!!!!!!!!!Starting !!!!!!!!!!!\n");
+	//printf("!!!!!!!!!Starting !!!!!!!!!!!\n");
 	fp=fopen("PacketInfo.txt","w+");
 	if(fp==NULL){
 		printf("Error on creating FILE.\n");
@@ -42,7 +42,6 @@ int Realtimepacket(int x){
 			}
 				break;
 		case 2: rawSocket = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
-			//printf("Hello\n");
 			if(rawSocket<0)
 			{
 				printf("Socket creating ERROR.\n");
@@ -79,7 +78,7 @@ int Realtimepacket(int x){
     			strcpy(tm, "IP Dest Address");
     			printf("%-20s", tm);
 		        strcpy(tm, "Protocol");
-    			printf("%-15s", tm);
+    			printf("%-20s", tm);
     			strcpy(tm, "Source Port");
     			printf("%-20s", tm);
     			strcpy(tm, "Dest Port");
@@ -120,20 +119,21 @@ int Realtimepacket(int x){
 	}
 	while(1){
 		sockaddSize= sizeof(struct sockaddr);
-		//printf("Hello\n");
 		dataSize=recvfrom(rawSocket,buff,65536,0,&saddr,&sockaddSize);
-		//printf("Hello\n");
-		if(dataSize<0){
+		
+		if(dataSize<0)
+		{
 			printf("Receiving Failed. Failed to Capture Packets.\n");
-			return -3;// Receiving failure defining as -3
+			return -11;
 		}
-		//printf("Hello\n");
+		
 		CapturingPacket(buff,dataSize);
-		//printf("Hello\n");
 		sleep(1);	
 	}
 	close(rawSocket);
 	printf("Complete.\n");
+	fprintf(fp,"TCP : %d   UDP : %d   ICMP : %d    Others : %d   Total : %d\n",TCP_num,UDP_num,ICMP_num,others,total);
+	fclose(fp);
 	return 0;
 }
 void CapturingPacket(unsigned char* buff,int dataSize){
@@ -159,7 +159,7 @@ void CapturingPacket(unsigned char* buff,int dataSize){
 			sleep(1);
 			break;
 	}
-	//printf("TCP : %d   UDP : %d   ICMP : %d    Others : %d   Total : %d\n",TCP_num,UDP_num,ICMP_num,others,total);
+	
 }
 void IPheader(unsigned char* buff, int dataSize)
 {

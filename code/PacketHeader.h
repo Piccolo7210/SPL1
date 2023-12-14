@@ -91,4 +91,32 @@ struct TCP
     u_int16_t tcp_urgptr;
 };
 
+#define ICMP_ECHOREPLY 0       
+#define ICMP_DEST_UNREACH 3              
+#define ICMP_REDIRECT 5        
+#define ICMP_ECHO 8       
+#define ICMP_TIME_EXCEEDED 11        
+
+      
+struct icmphdr
+{
+  u_int8_t type;                
+  u_int8_t code;                
+  u_int16_t checksum;
+  union
+  {
+    struct
+    {
+      u_int16_t        id;
+      u_int16_t        sequence;
+    } echo;                        
+    u_int32_t        gateway;        
+    struct
+    {
+      u_int16_t        __unused;
+      u_int16_t        mtu;
+    } frag;                        
+  } un;
+};
+
 #endif

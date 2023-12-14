@@ -12,7 +12,7 @@
 FILE *filepointer;
 char fileName[100];
 int pacekt_no;
-long  int spoof[MAX],tcp = 0, http = 0, ssl = 0;
+long  int fake_ip[MAX],tcp = 0, http = 0, ssl = 0;
 long int  false_no = -1, fake_num = -1;
 struct Synfld spam[MAX];
 
@@ -165,7 +165,7 @@ ssl=0;
                 }
                 else if (ntohs(Tcphead.srcport) == 80 || ntohs(Tcphead.destport) == 80)
                 {
-                    strcpy(temp, "HTTP");
+                    strcpy(temp, "HTTP(TCP)");
                     http+=1;
                 }
 
@@ -177,12 +177,12 @@ ssl=0;
                     else
                         flg[j++] = 0;
                 }
-        int urgent = 0;
-        int ack = 0;
-        int  push = 0;
-        int reset = 0;
-        int  syn = 0; 
-        int fin = 0;
+        		int urgent = 0;
+        		int ack = 0;
+        		int  push = 0;
+        		int reset = 0;
+       	 		int  syn = 0; 
+        		int fin = 0;
                 for (int i = 0; i < 6; i++)
                 {
                      switch(i){
@@ -233,7 +233,7 @@ ssl=0;
         {
             for (int j = 0; j < 4; j++)
             {
-                printf("%d", spam[spoof[i]].IP[j]);
+                printf("%d", spam[fake_ip[i]].IP[j]);
                 
                 if (j < 3)
                     printf(".");
@@ -319,6 +319,6 @@ void check_flood()
     for (long int i = 0; i <= false_no; i++)
     {
         if ((spam[i].syn - spam[i].syn_ack) > 20)
-            spoof[++fake_num] = i;
+            fake_ip[++fake_num] = i;
     }
 }
