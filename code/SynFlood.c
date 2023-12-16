@@ -200,15 +200,15 @@ ssl=0;
                                 break;
                     }
                 }
-                if (syn == 1 && ack == 1 && urgent == 0 && fin == 0 && push == 0 && reset == 0)
+                if (syn == 1 && ack == 0 && urgent == 0 && fin == 0 && push == 0 && reset == 0)
                 {
 
-                    checking_syn(address1, 2);
+                    checking_syn(address1, 1);
                 }
-                else if (syn == 1 && ack == 0 && urgent == 0 && fin == 0 && push == 0 && reset == 0)
+                else if (syn == 1 && ack == 1 && urgent == 0 && fin == 0 && push == 0 && reset == 0)
                 {
 
-                    checking_syn(address2, 1);
+                    checking_syn(address2, 2);
                 }
                    printf("%-20d%-20s%-20s%-20s%-20d%-20d\n", pacekt_no+ 1, source_ip, destination_ip, temp, source_port, destination_port);
             }
