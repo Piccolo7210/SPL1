@@ -318,7 +318,7 @@ void check_flood()
 
     for (long int i = 0; i <= false_no; i++)
     {
-        if ((spam[i].syn - spam[i].syn_ack) > 20)
+        if ((spam[i].syn - spam[i].syn_ack) > 15)
             fake_ip[++fake_num] = i;
     }
 }
