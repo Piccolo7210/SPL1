@@ -393,16 +393,21 @@ int sslPacket(unsigned char* buff,int dataSize){
 	fprintf(fp,"     Version: ");
 	if(ver1==3 && ver2==1)
 	{
-		strcpy(version,"TLS 1.1");
+		strcpy(version,"TLS 1.0");
 		//printf("%s\n",version);
 		fprintf(fp,"TLS 1.1\n");
 	}
 	else if(ver1==3 && ver2==2)
 	{
-		strcpy(version,"TLS 1.2");
+		strcpy(version,"TLS 1.1");
 		fprintf(fp,"TLS 1.2\n");
 	}
 	else if(ver1==3 && ver2==3)
+	{
+		strcpy(version,"TLS 1.2");
+		fprintf(fp,"TLS 1.3\n");
+	}
+	else if(ver1==3 && ver2==4)
 	{
 		strcpy(version,"TLS 1.3");
 		fprintf(fp,"TLS 1.3\n");
