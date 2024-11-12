@@ -12,8 +12,7 @@ Detailed Packet Information: Extract and display critical information, such as:<
 i. Source and destination IP addresses<br>
 ii. Port numbers<br>
 iii. Packet payload data<br>
-File Import Support: Load and analyze pre-saved packet capture files in popular formats such as .pcap and .pcapng.<br>
-###Technology Stack**<br>
+### Technology Stack<br>
 Languages: C (primary), C++ (optional)<br>
 Tools & Libraries: Wireshark, Libpcap<br>
 Prerequisites<br>
