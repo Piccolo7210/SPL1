@@ -14,14 +14,10 @@ iii.Packet payload data<br>
 File Import Support: Load and analyze pre-saved packet capture files in popular formats such as .pcap and .pcapng.<br>
 **Technology Stack**<br>
 Languages: C (primary), C++ (optional)<br>
-Tools & Libraries:<br>
-Wireshark: for packet analysis.<br>
-Libpcap: optional library for packet capturing.<br>
-Getting Started<br>
+Tools & Libraries: Wireshark, Libpcap<br>
 Prerequisites<br>
-Install Wireshark for packet analysis.<br>
-Install Libpcap if you intend to add packet capture capabilities.<br>
-Installation<br>
+Install Wireshark for packet analysis. Install Libpcap if you intend to add packet capture capabilities.<br>
+## Installation<br>
 **Clone the repository:** <br>
 git clone https://github.com/yourusername/PacketEye.git <br>
 Navigate to the project directory:<br>
